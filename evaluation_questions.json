@@ -1,0 +1,500 @@
+{
+  "evaluation_questions": [
+    {
+      "id": "f2_001",
+      "category": "eracun_osnovni_pojmovi",
+      "question": "Što je eRačun i mora li biti u PDF formatu?",
+      "expected_answer": "eRačun je račun izdan, poslan i zaprimljen u strukturiranom elektroničkom obliku koji omogućuje automatsku i elektroničku obradu. eRačun se NE može izraditi u PDF formatu niti dostaviti na mail. Za izdavanje i zaprimanje eRačuna mora se imati programsko rješenje - pristupna točka.",
+      "answer_type": "definicija",
+      "difficulty": "easy",
+      "key_concepts": [
+        "eRačun",
+        "strukturirani elektronički oblik",
+        "pristupna točka",
+        "PDF"
+      ]
+    },
+    {
+      "id": "f2_002",
+      "category": "obveznici_izdavanja",
+      "question": "Tko se smatra izdavateljem i primateljem eRačuna prema Zakonu o fiskalizaciji?",
+      "expected_answer": "Izdavatelj i primatelj eRačuna su: 1) porezni obveznik upisan u registar PDV-a sa sjedištem u Hrvatskoj, 2) obveznik poreza na dohodak od samostalne djelatnosti i obveznik poreza na dobit koji nije upisan u registar PDV-a, a ima sjedište u Hrvatskoj, 3) tijela državne uprave, JLP(R)S te proračunski i izvanproračunski korisnici državnog proračuna i JLP(R)S upisani u Registar proračunskih i izvanproračunskih korisnika.",
+      "answer_type": "enumeracija",
+      "difficulty": "medium",
+      "key_concepts": [
+        "izdavatelj eRačuna",
+        "primatelj eRačuna",
+        "PDV",
+        "porez na dobit",
+        "javna tijela"
+      ]
+    },
+    {
+      "id": "f2_003",
+      "category": "rokovi_primjene",
+      "question": "Od kada obveznici koji nisu u sustavu PDV-a moraju izdavati i zaprimati eRačune?",
+      "expected_answer": "Obveznici koji nisu u sustavu PDV-a od 1. siječnja 2026. imaju obvezu zaprimanja eRačuna i fiskalizacije istih. Od 1. siječnja 2027. obveznici koji nisu u sustavu PDV-a imaju obvezu i izdavanja eRačuna i fiskalizacije istih prema primateljima eRačuna.",
+      "answer_type": "datum_i_obveza",
+      "difficulty": "medium",
+      "key_concepts": [
+        "rokovi primjene",
+        "PDV",
+        "1.1.2026",
+        "1.1.2027",
+        "zaprimanje",
+        "izdavanje"
+      ]
+    },
+    {
+      "id": "f2_004",
+      "category": "fiskalizacija_postupak",
+      "question": "Što je fiskalizacija eRačuna i kada se mora provesti?",
+      "expected_answer": "Fiskalizacija eRačuna podrazumijeva automatizirani proces kojim se iz izdanog i zaprimljenog eRačuna izdvaja propisani set podataka u fiskalizacijsku poruku koja se dostavlja Poreznoj upravi. Postupak se provodi odvojeno od postupka izdavanja i zaprimanja eRačuna. Izdavatelj mora fiskalizirati odmah nakon izdavanja eRačuna (kod samoizdavanja najkasnije 5 radnih dana). Primatelj mora fiskalizirati najkasnije 5 radnih dana od primitka eRačuna.",
+      "answer_type": "proces_i_rokovi",
+      "difficulty": "medium",
+      "key_concepts": [
+        "fiskalizacija eRačuna",
+        "fiskalizacijska poruka",
+        "5 radnih dana",
+        "izdavatelj",
+        "primatelj"
+      ]
+    },
+    {
+      "id": "f2_005",
+      "category": "razlike_f1_f2",
+      "question": "Koje su glavne razlike između Fiskalizacije 1.0 i Fiskalizacije 2.0?",
+      "expected_answer": "Fiskalizacija 1.0 (B2C): provodi se samo za izdavatelja računa u krajnjoj potrošnji, račun sadrži JIR i QR kod kao ovjeru Porezne uprave. Fiskalizacija 2.0 (B2B/B2G): provodi se za eRačune između poduzetnika i javnih tijela, fiskalizaciju provode i izdavatelj i primatelj eRačuna, postupak je odvojen od razmjene eRačuna, na eRačunu nema ovjere Porezne uprave (nema JIR, ZKI, QR koda).",
+      "answer_type": "usporedba",
+      "difficulty": "hard",
+      "key_concepts": [
+        "F1.0",
+        "F2.0",
+        "B2C",
+        "B2B",
+        "JIR",
+        "QR kod",
+        "razmjena eRačuna"
+      ]
+    },
+    {
+      "id": "f2_006",
+      "category": "pristupna_tocka",
+      "question": "Što je pristupna točka i tko može biti pristupna točka?",
+      "expected_answer": "Pristupna točka je porezni obveznik ili informacijski posrednik koji ispunjava sve tehničke uvjete za razmjenu eRačuna i/ili fiskalizaciju eRačuna i/ili eIzvještavanje i/ili uslugu MPS-a. Razmjena eRačuna i fiskalizacija eRačuna provodi se putem pristupne točke. Pristupna točka može biti sam porezni obveznik ili informacijski posrednik.",
+      "answer_type": "definicija",
+      "difficulty": "medium",
+      "key_concepts": [
+        "pristupna točka",
+        "informacijski posrednik",
+        "razmjena eRačuna",
+        "MPS"
+      ]
+    },
+    {
+      "id": "f2_007",
+      "category": "informacijski_posrednik",
+      "question": "Što mora informacijski posrednik napraviti da bi mogao pružati usluge?",
+      "expected_answer": "Informacijski posrednik mora: 1) imati dodijeljen OIB, 2) razviti aplikativna rješenja za razmjenu eRačuna, fiskalizaciju i objavu adrese u AMS-u, 3) proći testiranje sukladnosti kroz Portal za testiranje sukladnosti, 4) dostaviti propisanu dokumentaciju, 5) dobiti potvrdu o sukladnosti. Nakon toga se upisuje na popis ovlaštenih informacijskih posrednika koji objavljuje Porezna uprava.",
+      "answer_type": "procedura",
+      "difficulty": "hard",
+      "key_concepts": [
+        "informacijski posrednik",
+        "OIB",
+        "testiranje sukladnosti",
+        "dokumentacija",
+        "potvrda o sukladnosti"
+      ]
+    },
+    {
+      "id": "f2_008",
+      "category": "mikroeracun",
+      "question": "Što je aplikacija MIKROeRAČUN i tko je može koristiti?",
+      "expected_answer": "MIKROeRAČUN je besplatna aplikacija Porezne uprave u kojoj je Porezna uprava pristupna točka odnosno informacijski posrednik. Pravo korištenja imaju izdavatelj i primatelj eRačuna koji: nisu upisani u registar obveznika PDV-a, nisu javni naručitelji, te su korisnici sustava ePorezna. Aplikacija omogućava zaprimanje eRačuna od 1.1.2026., izdavanje eRačuna od 1.1.2027., fiskalizaciju i čuvanje eRačuna.",
+      "answer_type": "opis_aplikacije",
+      "difficulty": "medium",
+      "key_concepts": [
+        "MIKROeRAČUN",
+        "besplatna aplikacija",
+        "PDV",
+        "javni naručitelji",
+        "ePorezna"
+      ]
+    },
+    {
+      "id": "f2_009",
+      "category": "eizvjestavnje",
+      "question": "Kada izdavatelj eRačuna mora provoditi postupak eIzvještavanja?",
+      "expected_answer": "Izdavatelj eRačuna mora provoditi eIzvještavanje u sljedećim slučajevima: 1) kada ne može izdati eRačun radi nedostupnosti adrese primatelja u AMS-u (ako se radi o trgovačkom društvu, obrtniku ili nositelju slobodnog zanimanja), 2) za podatke o naplati eRačuna - do 20. dana u mjesecu za prethodni mjesec dostavlja podatke o eRačunima za koje je izvršena naplata.",
+      "answer_type": "uvjeti_i_rokovi",
+      "difficulty": "hard",
+      "key_concepts": [
+        "eIzvještavanje",
+        "AMS",
+        "adresa primatelja",
+        "naplata",
+        "20. dan u mjesecu"
+      ]
+    },
+    {
+      "id": "f2_010",
+      "category": "eizvjestavnje_odbijanje",
+      "question": "Što mora napraviti primatelj eRačuna koji odbija eRačun?",
+      "expected_answer": "Primatelj eRačuna dužan je Poreznoj upravi do 20. dana u mjesecu za prethodni mjesec dostaviti podatke o eRačunima za koje je izvršio odbijanje u prethodnom mjesecu. Dostavlja podatke o: datumu izdavanja eRačuna, broju eRačuna, OIB-u izdavatelja i primatelja, datumu odbijanja i razlogu odbijanja. Dostavom podatka o odbijanju daje se izjava da se neće koristiti pravo na pretporez po tom eRačunu.",
+      "answer_type": "procedura_i_posljedice",
+      "difficulty": "hard",
+      "key_concepts": [
+        "odbijanje eRačuna",
+        "eIzvještavanje",
+        "20. dan",
+        "pretporez",
+        "razlog odbijanja"
+      ]
+    },
+    {
+      "id": "f2_011",
+      "category": "kpd",
+      "question": "Je li podatak KPD-a obvezan na eRačunu i u kojim slučajevima?",
+      "expected_answer": "KPD je obvezan kod izdavanja eRačuna i fiskalizacije eRačuna. KPD se NE zahtijeva za račune koji se ne izdaju kao eRačuni (npr. kada se ne radi o osobi koja je primatelj eRačuna ili kada transakcija ne zadovoljava uvjete tuzemne transakcije). KPD se također ne zahtijeva kod računa za predujam u poslovnom procesu P4.",
+      "answer_type": "uvjeti_primjene",
+      "difficulty": "medium",
+      "key_concepts": ["KPD", "eRačun", "tuzemna transakcija", "predujam", "P4"]
+    },
+    {
+      "id": "f2_012",
+      "category": "fiskaplikacija",
+      "question": "Čemu služi FiskAplikacija i koje funkcionalnosti omogućava?",
+      "expected_answer": "FiskAplikacija je aplikacija Porezne uprave u sustavu ePorezna koja omogućuje: 1) pregled fiskaliziranih podataka iz F1.0, F2.0 i eIzvještavanja, 2) upravljanje ovlaštenjima za razmjenu eRačuna i fiskalizaciju, 3) uvid u statuse računa (poslan/zaprimljen/naplaćen/odbijen), 4) uvid u informativnu prijavu PDV-a, 5) uvid u greške u fiskalizaciji, 6) unosnu formu za fiskalizaciju i eIzvještavanje. Omogućuje usklađenje eRačuna - zamjena za OPZ-STAT.",
+      "answer_type": "opis_funkcionalnosti",
+      "difficulty": "medium",
+      "key_concepts": [
+        "FiskAplikacija",
+        "ePorezna",
+        "statusi",
+        "informativna prijava PDV",
+        "ovlaštenja"
+      ]
+    },
+    {
+      "id": "f2_013",
+      "category": "statusi_fiskaplikacija",
+      "question": "Što znači status 'Zaprimljen i neuparen' u FiskAplikaciji?",
+      "expected_answer": "Status 'Zaprimljen i neuparen' znači da je fiskalizaciju odradila samo jedna strana - izdavatelj ili primatelj eRačuna. Budući da se fiskalizacija zaprimljenih eRačuna može odraditi u roku 5 radnih dana, normalno je da eRačun neko vrijeme bude neuparen.",
+      "answer_type": "tumacenje_statusa",
+      "difficulty": "medium",
+      "key_concepts": [
+        "status",
+        "neuparan",
+        "fiskalizacija",
+        "5 radnih dana",
+        "FiskAplikacija"
+      ]
+    },
+    {
+      "id": "f2_014",
+      "category": "statusi_fiskaplikacija",
+      "question": "Što znači status 'Odstupanje' u FiskAplikaciji i treba li zbog toga odbiti račun?",
+      "expected_answer": "Status 'Odstupanje' znači da su fiskalizacijsku poruku poslale obje strane, ali postoje razlike u podacima. Status Odstupanje NE predstavlja razlog za odbijanje računa, dodatne korekcije niti ponovno slanje eRačuna i fiskalizacijskih poruka. Provjera računa provodi se u postupku likvidature gdje se utvrđuje valjanost računa i razlozi eventualnog odbijanja.",
+      "answer_type": "tumacenje_i_postupanje",
+      "difficulty": "hard",
+      "key_concepts": [
+        "odstupanje",
+        "fiskalizacija",
+        "odbijanje",
+        "likvidatura",
+        "podatovna usklađenost"
+      ]
+    },
+    {
+      "id": "f2_015",
+      "category": "AMS",
+      "question": "Što je AMS i čemu služi?",
+      "expected_answer": "AMS (Adresar meta podatkovnih servisa) je adresar koji vodi Porezna uprava. Preko AMS-a svaki izdavatelj eRačuna može doći do adrese primatelja eRačuna. Informacijski posrednici objavljuju adrese za zaprimanje eRačuna u AMS-u putem MPS komponente, a korisnici (porezni obveznici) potvrđuju objavljene adrese kroz FiskAplikaciju.",
+      "answer_type": "definicija_i_svrha",
+      "difficulty": "medium",
+      "key_concepts": [
+        "AMS",
+        "adresa primatelja",
+        "MPS",
+        "FiskAplikacija",
+        "razmjena eRačuna"
+      ]
+    },
+    {
+      "id": "f2_016",
+      "category": "broj_racuna",
+      "question": "Kakvu strukturu mora imati broj eRačuna?",
+      "expected_answer": "Broj eRačuna mora se sastojati od tri dijela: numerički broj računa, oznaka poslovnog prostora i broj naplatnog uređaja. Obveznik samostalno određuje internim aktom što se smatra poslovnim prostorom i naplatnim uređajem. Znak odvajanja elemenata (/, -, _) nije propisan. Ova struktura je obvezna i za F1.0 (B2C) i za F2.0 (B2B).",
+      "answer_type": "tehnicki_zahtjev",
+      "difficulty": "medium",
+      "key_concepts": [
+        "broj računa",
+        "trodijelna struktura",
+        "poslovni prostor",
+        "naplatni uređaj",
+        "interni akt"
+      ]
+    },
+    {
+      "id": "f2_017",
+      "category": "samoizdavanje",
+      "question": "Što je samoizdavanje eRačuna i kako se provodi fiskalizacija?",
+      "expected_answer": "Samoizdavanje eRačuna je kada kupac izdaje eRačun u ime prodavatelja. Koristi se poslovni proces P12. Kupac/izdavatelj eRačuna ili njegova pristupna točka obavlja fiskalizaciju ulaznog eRačuna. Prodavatelj/primatelj eRačuna ili njegova pristupna točka obavlja fiskalizaciju izlaznog eRačuna. eRačun se sprema kao ulazni kod kupca i kao izlazni kod prodavatelja.",
+      "answer_type": "proces",
+      "difficulty": "hard",
+      "key_concepts": [
+        "samoizdavanje",
+        "P12",
+        "fiskalizacija",
+        "ulazni eRačun",
+        "izlazni eRačun"
+      ]
+    },
+    {
+      "id": "f2_018",
+      "category": "tuzemna_transakcija",
+      "question": "Kada postoji obveza izdavanja eRačuna za inozemne transakcije?",
+      "expected_answer": "Zakon ne propisuje obvezu izdavanja eRačuna za transakcije s poreznim obveznicima iz drugih država članica EU ili trećih zemalja. Obveza izdavanja eRačuna postoji samo za tuzemne transakcije između zakonski definiranih izdavatelja i primatelja eRačuna. Za inozemne transakcije račun se izdaje u njemu prikladnom obliku.",
+      "answer_type": "granice_primjene",
+      "difficulty": "medium",
+      "key_concepts": [
+        "tuzemna transakcija",
+        "EU",
+        "treće zemlje",
+        "obveza izdavanja",
+        "inozemne transakcije"
+      ]
+    },
+    {
+      "id": "f2_019",
+      "category": "certifikati",
+      "question": "Može li se isti digitalni certifikat koristiti za F1.0 i F2.0?",
+      "expected_answer": "Da. Isti aplikativni certifikat može se koristiti i u postupku fiskalizacije računa (B2C segment - F1.0) i kod eRačuna te fiskalizacije eRačuna (B2B segment - F2.0). Važno je da je certifikat izdan od strane pružatelja usluge povjerenja u RH. Isti aplikativni certifikat može se koristiti i za potpisivanje fiskalizacijskih poruka i za potpisivanje poruka (AS4) u kojima se šalje eRačun.",
+      "answer_type": "tehnicki_zahtjev",
+      "difficulty": "easy",
+      "key_concepts": [
+        "digitalni certifikat",
+        "F1.0",
+        "F2.0",
+        "AS4",
+        "potpisivanje"
+      ]
+    },
+    {
+      "id": "f2_020",
+      "category": "clanak_39",
+      "question": "Kada se može primijeniti članak 39. Zakona za B2B transakcije?",
+      "expected_answer": "Prema članku 39. Zakona, od obveze izdavanja eRačuna i fiskalizacije eRačuna može biti izuzeta B2B transakcija koja se plaća gotovinom ili karticom, te za koju je izdan račun i proveden postupak fiskalizacije računa u krajnjoj potrošnji (F1.0) prema članku 15. Zakona. Ako se izda račun po F1.0, ne može se izdati i fiskalizirati eRačun. Odluka koji postupak primijeniti je na izdavatelju. Ova mogućnost stupa na snagu 1.1.2026.",
+      "answer_type": "iznimka_pravilo",
+      "difficulty": "hard",
+      "key_concepts": [
+        "članak 39",
+        "B2B",
+        "gotovina",
+        "kartica",
+        "F1.0",
+        "izuzeće"
+      ]
+    },
+    {
+      "id": "f2_021",
+      "category": "predujam",
+      "question": "Kako se postupa s računima za predujam kod izdavanja konačnog računa?",
+      "expected_answer": "Izmjenama Pravilnika o PDV-u od 1.1.2026. propisuje se da se izdani račun za predujam stornira, a za isporuku dobara odnosno obavljanje usluga izdaje se račun u kojem se zaračunava cjelokupna isporuka. Za svaki primljeni predujam treba izdati račun neovisno o tome je li isporuka obavljena u istom razdoblju oporezivanja. Ako se iz predujma plaća više isporuka, izdaje se storno račun za predujam u iznosu vrijednosti obavljene isporuke te račun za obavljenu isporuku.",
+      "answer_type": "postupak",
+      "difficulty": "hard",
+      "key_concepts": [
+        "predujam",
+        "storno",
+        "konačni račun",
+        "Pravilnik o PDV-u",
+        "1.1.2026"
+      ]
+    },
+    {
+      "id": "f2_022",
+      "category": "odvjetnici",
+      "question": "Koje su obveze odvjetničkih ureda koji nisu u sustavu PDV-a?",
+      "expected_answer": "Odvjetnički uredi koji nisu u sustavu PDV-a: 1) Od 1.1.2026. moraju zaprimati eRačune od drugih poduzetnika i poduzeti radnje za objavu pristupne točke, 2) Od 1.1.2026. moraju izdavati fiskalne račune (F1.0) za sve račune prema građanima (krajnja potrošnja) neovisno o načinu plaćanja, 3) Od 1.1.2027. moraju izdavati eRačune prema pravnim osobama i javnim tijelima. Tijekom 2026. mogu nastaviti izdavati račune kao i 2025., mogu koristiti MIKROeRAČUN.",
+      "answer_type": "obveze_po_godinama",
+      "difficulty": "hard",
+      "key_concepts": [
+        "odvjetnički uredi",
+        "PDV",
+        "1.1.2026",
+        "1.1.2027",
+        "zaprimanje",
+        "izdavanje",
+        "MIKROeRAČUN"
+      ]
+    },
+    {
+      "id": "f2_023",
+      "category": "profesionalna_tajna",
+      "question": "Kako se štiti profesionalna tajna odvjetnika kod eRačuna?",
+      "expected_answer": "U fiskalizacijskoj poruci za B2C račune odvjetnika ne povlači se OIB klijenta, čak i ako je naveden na računu. Kod eRačuna potrebno je iskazati KPD šesteroznamenkastu oznaku (69.10 za pravne usluge) i generički opis stavke. Specifični podaci o broju spisa, vrsti postupka, imenima protivnih strana ostaju samo u dokumentaciji odvjetnika i klijenta. Za isporuke zaštićene stupnjem tajnosti (članak 33. stavak 2. Zakona) ne izdaje se eRačun već papirnati račun.",
+      "answer_type": "zastita_podataka",
+      "difficulty": "hard",
+      "key_concepts": [
+        "profesionalna tajna",
+        "odvjetnici",
+        "KPD 69.10",
+        "fiskalizacijska poruka",
+        "članak 33"
+      ]
+    },
+    {
+      "id": "f2_024",
+      "category": "OPG",
+      "question": "Koje su obveze OPG-a u sustavu PDV-a vezano uz fiskalizaciju?",
+      "expected_answer": "OPG u sustavu PDV-a ili koji je obveznik poreza na dohodak od samostalne djelatnosti/poreza na dobit: 1) Izuzet je od fiskalizacije računa (F1.0) samo za prodaju vlastitih poljoprivrednih proizvoda u proizvodnim objektima, na tržnicama i otvorenim prostorima. 2) Za ostale promete u krajnjoj potrošnji mora izdavati račune i provoditi F1.0. 3) Mora izdavati eRačune i provoditi F2.0 ako izdaje račun drugoj osobi koja je primatelj eRačuna. 4) Smatra se primateljem eRačuna.",
+      "answer_type": "obveze_posebna_kategorija",
+      "difficulty": "hard",
+      "key_concepts": [
+        "OPG",
+        "PDV",
+        "vlastiti poljoprivredni proizvodi",
+        "izuzeće",
+        "F1.0",
+        "F2.0"
+      ]
+    },
+    {
+      "id": "f2_025",
+      "category": "EU_norma",
+      "question": "Koje vrste dokumenata (šifre) se najčešće koriste za eRačune u Hrvatskoj?",
+      "expected_answer": "Najčešće korištene šifre vrste dokumenta u Hrvatskoj su: 380 - Komercijalni račun (glavni račun), 381 - Odobrenje (CreditNote), 383 - Terećenje (dodatno terećenje po izdanom računu), 384 - Korektivni račun (korekcije s pozitivnim i negativnim stavcama), 386 - Račun za predujam. Dodatno se koriste: 82 - Račun za mjerene usluge, 326 - Parcijalni račun, 394 - Račun za leasing.",
+      "answer_type": "enumeracija",
+      "difficulty": "medium",
+      "key_concepts": [
+        "šifra vrste dokumenta",
+        "380",
+        "381",
+        "383",
+        "384",
+        "386",
+        "EU norma"
+      ]
+    },
+    {
+      "id": "f2_026",
+      "category": "poslovni_procesi",
+      "question": "Koja je razlika između poslovnih procesa P4 i P6?",
+      "expected_answer": "P4: Kupac naručuje, plaćanje predujma je obavljeno. Svaka isporuka rezultira računom, račun se odnosi na jednu isporuku i narudžbenicu. Ne mora postojati narudžbenica. Kod P4 i avansnog plaćanja nema obaveze iskazivanja KPD jer se može izdati račun za predujam za još nepostojeće isporuke. P6: Plaćanje prije isporuke temeljem specifične narudžbe. Narudžbenica je razmijenjena, ali plaćanje se izvršava prije isporuke. Mora postojati specifična narudžbenica za određenu isporuku.",
+      "answer_type": "usporedba",
+      "difficulty": "hard",
+      "key_concepts": [
+        "P4",
+        "P6",
+        "predujam",
+        "narudžbenica",
+        "KPD",
+        "poslovni proces"
+      ]
+    },
+    {
+      "id": "f2_027",
+      "category": "nefiskalizirani_eracuni",
+      "question": "Zašto se eRačun pojavljuje kao nefiskaliziran u FiskAplikaciji?",
+      "expected_answer": "eRačun se pojavljuje kao nefiskaliziran kada druga strana obavi fiskalizaciju, a korisnik ne. Razlozi mogu biti: 1) Ovlaštenja za fiskalizaciju nisu unesena u FiskAplikaciju, 2) eRačun nije zaprimljen (treba provjeriti s Informacijskim posrednikom), 3) Nije ugovorena usluga fiskalizacije izlaznih/ulaznih eRačuna. Ako se utvrdi da ovlaštenje nije ispravno zadano u implementacijskom razdoblju, nije potrebno naknadno fiskalizirati već izdan eRačun.",
+      "answer_type": "troubleshooting",
+      "difficulty": "medium",
+      "key_concepts": [
+        "nefiskalizirani eRačun",
+        "ovlaštenja",
+        "FiskAplikacija",
+        "implementacijsko razdoblje"
+      ]
+    },
+    {
+      "id": "f2_028",
+      "category": "kaznjavanje",
+      "question": "Hoće li se poduzetnici kažnjavati zbog grešaka u fiskalizaciji eRačuna?",
+      "expected_answer": "Porezna uprava razvija partnerski odnos s poreznim obveznicima te će kod nastalih grešaka primjenjivati načelo oportuniteta prema kojem se prekršajni postupci neće provoditi u početnoj fazi primjene Zakona o fiskalizaciji. U slučajevima kada se utvrde odstupanja, Porezna uprava će zatražiti dodatno objašnjenje pri čemu svaka suradnja omogućuje ispravak ili obrazloženje bez pokretanja prekršajnih postupaka, ukoliko nije riječ o namjernim radnjama.",
+      "answer_type": "policy",
+      "difficulty": "easy",
+      "key_concepts": [
+        "kažnjavanje",
+        "greške",
+        "načelo oportuniteta",
+        "implementacijska faza",
+        "partnerski odnos"
+      ]
+    },
+    {
+      "id": "f2_029",
+      "category": "AS4_protokol",
+      "question": "Zašto je AS4 protokol važan za razmjenu eRačuna?",
+      "expected_answer": "AS4 protokol je propisan Tehničkom specifikacijom kao minimalni standard komunikacije. Svaki informacijski posrednik mora znati zaprimiti račun po AS4 protokolu. Na taj način stvaraju se preduvjeti da svaki informacijski posrednik može komunicirati sa svakim drugim bez potrebe međusobnih interkonekcija. Isto tako nije onemogućeno korištenje drugih metoda razmjene (npr. EDI računi), ali AS4 osigurava unificiranu komunikaciju.",
+      "answer_type": "tehnicki_standard",
+      "difficulty": "medium",
+      "key_concepts": [
+        "AS4 protokol",
+        "razmjena eRačuna",
+        "interoperabilnost",
+        "EDI",
+        "unificirana komunikacija"
+      ]
+    },
+    {
+      "id": "f2_030",
+      "category": "complex_scenario",
+      "question": "Paušalni obrt nije u sustavu PDV-a, većina kupaca su građani koji plaćaju na transakcijski račun, ali povremeno ima i B2B kupce koji plaćaju karticom. Što se mijenja u njegovom poslovanju od 1.1.2026?",
+      "expected_answer": "Od 1.1.2026. paušalni obrt mora: 1) Imati prilagođeni naplatni uređaj s programskim rješenjem za F1.0 (izdavanje računa prema građanima i fiskalizaciju, uključujući i naplatu na transakcijski račun). 2) Imati pristupnu točku za zaprimanje ulaznih eRačuna - može koristiti besplatnu aplikaciju MIKROeRAČUN. 3) Za B2B transakcije plaćene karticom može primijeniti članak 39. - izdati račun po pravilima F1.0 uz navođenje OIB-a primatelja (umjesto izdavanja eRačuna). Od 1.1.2027. mora i izdavati eRačune.",
+      "answer_type": "kompleksni_scenario",
+      "difficulty": "expert",
+      "key_concepts": [
+        "paušalni obrt",
+        "F1.0",
+        "F2.0",
+        "MIKROeRAČUN",
+        "članak 39",
+        "transakcijski račun",
+        "B2C",
+        "B2B"
+      ]
+    }
+  ],
+  "metadata": {
+    "document_source": "pitanja i odgovori (1).pdf",
+    "focus_area": "Fiskalizacija 2.0 i eRačun",
+    "total_questions": 30,
+    "difficulty_distribution": {
+      "easy": 3,
+      "medium": 14,
+      "hard": 12,
+      "expert": 1
+    },
+    "category_distribution": {
+      "eracun_osnovni_pojmovi": 1,
+      "obveznici_izdavanja": 1,
+      "rokovi_primjene": 1,
+      "fiskalizacija_postupak": 1,
+      "razlike_f1_f2": 1,
+      "pristupna_tocka": 1,
+      "informacijski_posrednik": 1,
+      "mikroeracun": 1,
+      "eizvjestavnje": 1,
+      "eizvjestavnje_odbijanje": 1,
+      "kpd": 1,
+      "fiskaplikacija": 1,
+      "statusi_fiskaplikacija": 2,
+      "AMS": 1,
+      "broj_racuna": 1,
+      "samoizdavanje": 1,
+      "tuzemna_transakcija": 1,
+      "certifikati": 1,
+      "clanak_39": 1,
+      "predujam": 1,
+      "odvjetnici": 1,
+      "profesionalna_tajna": 1,
+      "OPG": 1,
+      "EU_norma": 1,
+      "poslovni_procesi": 1,
+      "nefiskalizirani_eracuni": 1,
+      "kaznjavanje": 1,
+      "AS4_protokol": 1,
+      "kompleksni_scenario": 1
+    }
+  }
+}
