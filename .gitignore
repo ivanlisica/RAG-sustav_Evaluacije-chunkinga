@@ -1,2 +1,4 @@
 #Env file
 .env
+# Model cache
+model_cache/
