@@ -4,7 +4,6 @@ import seaborn as sns
 import os
 import numpy as np
 
-# Postavljanje stila
 sns.set_theme(style="whitegrid", context="paper", font_scale=1.2)
 plt.rcParams.update({'figure.dpi': 150})
 
@@ -26,7 +25,6 @@ def generate_relevancy_vs_correctness(csv_path):
         print(f"Datoteka {csv_path} nije pronađena!")
         return
 
-    # Učitavanje podataka
     df = pd.read_csv(csv_path)
     df['Readable Strategy'] = df['strategy'].apply(format_strategy_name)
     
@@ -35,7 +33,6 @@ def generate_relevancy_vs_correctness(csv_path):
 
     print("Generiram Graf 6: Context Relevancy vs Answer Correctness...")
 
-    # Agregacija podataka (prosjeci)
     summary = df.groupby('Readable Strategy').agg({
         'context_relevancy': 'mean',
         'answer_correctness': 'mean'
@@ -43,30 +40,24 @@ def generate_relevancy_vs_correctness(csv_path):
 
     plt.figure(figsize=(10, 7))
     
-    # 1. Iscrtavanje točaka
     sns.scatterplot(
         data=summary,
         x='context_relevancy',
         y='answer_correctness',
         hue='Readable Strategy',
-        s=400, # Veliki krugovi
+        s=400,
         marker='o',
-        legend=False, # Bez legende, koristimo direktne labele
+        legend=False,
         palette="viridis"
     )
     
-    # 2. Dodavanje diagonalne linije (y=x) za referencu
-    # Sve iznad linije znači da je model "pametniji" od konteksta
-    # Sve ispod linije znači da model ne iskorištava puni potencijal konteksta
     lims = [
         min(summary.context_relevancy.min(), summary.answer_correctness.min()) - 0.05,
         max(summary.context_relevancy.max(), summary.answer_correctness.max()) + 0.05
     ]
     plt.plot(lims, lims, '--', color='gray', alpha=0.5, label='Ideal Correlation (y=x)')
 
-    # 3. Dodavanje teksta pored točaka
     for i in range(summary.shape[0]):
-        # Pomak teksta da ne gazi točku
         plt.text(
             x=summary.context_relevancy[i] + 0.005, 
             y=summary.answer_correctness[i] + 0.005, 
@@ -75,11 +66,9 @@ def generate_relevancy_vs_correctness(csv_path):
             weight='bold'
         )
 
-    # 4. Oznake osi
     plt.xlabel("Average Context Relevancy (Kvaliteta Dohvata)")
     plt.ylabel("Average Answer Correctness (Točnost Odgovora)")
     
-    # Prilagodba granica grafa
     plt.xlim(summary.context_relevancy.min() - 0.05, summary.context_relevancy.max() + 0.15) # Malo više mjesta desno za tekst
     plt.ylim(summary.answer_correctness.min() - 0.05, summary.answer_correctness.max() + 0.05)
     
@@ -91,6 +80,5 @@ def generate_relevancy_vs_correctness(csv_path):
     plt.show()
     print(f"[GOTOVO] Graf spremljen u: {save_path}")
 
-# POKRETANJE
 csv_file_name = "rag_results_final.csv"
 generate_relevancy_vs_correctness(csv_file_name)

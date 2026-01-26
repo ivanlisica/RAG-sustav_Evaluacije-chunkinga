@@ -11,20 +11,16 @@ from datetime import datetime
 from typing import List, Dict, Any
 from dotenv import load_dotenv
 
-# Standardni OpenAI library (za evaluaciju)
 import openai
 
-# LlamaIndex imports (za RAG)
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.core.node_parser import SentenceSplitter, SemanticSplitterNodeParser
 from llama_index.embeddings.openai import OpenAIEmbedding
-from llama_index.llms.openai import OpenAI as LlamaOpenAI # Preimenujemo da ne bude sukoba
+from llama_index.llms.openai import OpenAI as LlamaOpenAI 
 
-# ================== KONFIGURACIJA ==================
 load_dotenv()
 
 class RAGConfig:
-    # U .env stavi: OPENAI_API_KEY=sk-proj-...
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     
     if not OPENAI_API_KEY:
@@ -34,13 +30,11 @@ class RAGConfig:
     RESULTS_DIR = "./Rezultati" 
     QUESTION_DATASET_PATH = "./evaluation_questions.json"
     
-    # Model
     LLM_MODEL = "gpt-4o-mini"
     EMBEDDING_MODEL = "text-embedding-3-large"
     
     SLEEP_BETWEEN_QUERIES = 0.5 
     
-     # Chunking Strategije
     CHUNKING_STRATEGIES = {
         "micro_overlap20": {
             "type": "fixed",
@@ -79,7 +73,6 @@ class RAGConfig:
         }
     }
 
-# ================== INICIJALIZACIJA ==================
 
 def setup_environment():
     os.makedirs(RAGConfig.PDF_INPUT_DIR, exist_ok=True)
@@ -88,13 +81,11 @@ def setup_environment():
 def initialize_models():
     print(f"\n[INIT] Inicijaliziram OpenAI: {RAGConfig.LLM_MODEL}")
     
-    # 1. Embedding (Lokalno)
     embed_model = OpenAIEmbedding(
         model_name=RAGConfig.EMBEDDING_MODEL,
         api_key=RAGConfig.OPENAI_API_KEY
     )
     
-    # 2. LLM (LlamaIndex Wrapper za RAG)
     llm = LlamaOpenAI(
         model=RAGConfig.LLM_MODEL, 
         temperature=0.1, 
@@ -106,7 +97,6 @@ def initialize_models():
     
     return embed_model, llm
 
-# ================== POMOĆNE FUNKCIJE ==================
 
 def load_documents():
     if not os.path.exists(RAGConfig.PDF_INPUT_DIR): raise FileNotFoundError("Nema dokumenata!")
@@ -135,7 +125,6 @@ def build_index(documents, strategy_name, strategy_config, embed_model):
     nodes = parser.get_nodes_from_documents(documents)
     return VectorStoreIndex(nodes=nodes, embed_model=embed_model, show_progress=True)
 
-# ================== EVALUACIJA (FIXED) ==================
 
 def process_query(index, question, expected, llm_rag):
     """
@@ -144,19 +133,15 @@ def process_query(index, question, expected, llm_rag):
     2. 'eval_client' (Raw OpenAI) za ocjenjivanje (jer treba JSON mode).
     """
     
-    # --- 1. RAG GENERACIJA (Koristi LlamaIndex) ---
     retriever = index.as_retriever(similarity_top_k=5)
     nodes = retriever.retrieve(question)
     context = "\n".join([n.text for n in nodes])
     
     start = time.time()
-    # Generiranje odgovora
     response = index.as_query_engine(llm=llm_rag).query(question)
     generated_text = response.response
     latency = time.time() - start
     
-    # --- 2. EVALUACIJA (Koristi direktni OpenAI client) ---
-    # Kreiramo privremeni klijent samo za evaluaciju
     eval_client = openai.OpenAI(api_key=RAGConfig.OPENAI_API_KEY)
     
     eval_prompt = f"""
@@ -179,7 +164,6 @@ def process_query(index, question, expected, llm_rag):
     """
     
     try:
-        # Koristimo 'json_object' mode koji garantira da nema greške u formatu
         eval_res = eval_client.chat.completions.create(
             model=RAGConfig.LLM_MODEL,
             messages=[
@@ -202,7 +186,6 @@ def process_query(index, question, expected, llm_rag):
         "answer_correctness": scores.get("answer_correctness", 0)
     }
 
-# ================== MAIN ==================
 
 def main():
     setup_environment()
@@ -227,7 +210,6 @@ def main():
             res = process_query(index, qa["question"], qa["expected_answer"], llm_rag)
             res["strategy"] = name
             
-            # Ispis rezultata u konzolu
             print(f"   -> F={res['faithfulness']} | R={res['context_relevancy']} | C={res['answer_correctness']}")
             
             strategy_res.append(res)
@@ -235,7 +217,6 @@ def main():
             
         all_results.extend(strategy_res)
     
-    # Save
     if all_results:
         df = pd.DataFrame(all_results)
         t = datetime.now().strftime("%Y%m%d_%H%M")
@@ -243,7 +224,6 @@ def main():
         csv_path = f"{RAGConfig.RESULTS_DIR}/openai_results_{t}.csv"
         df.to_csv(csv_path, index=False)
         
-        # Izračunaj prosjeke
         print("\n=== KONAČNI REZULTATI (PROSJEK) ===")
         summary = df.groupby('strategy')[['faithfulness', 'context_relevancy', 'answer_correctness', 'latency']].mean()
         print(summary)
