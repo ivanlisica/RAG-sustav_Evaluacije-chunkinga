@@ -17,7 +17,7 @@ import openai
 # LlamaIndex imports (za RAG)
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.core.node_parser import SentenceSplitter, SemanticSplitterNodeParser
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI as LlamaOpenAI # Preimenujemo da ne bude sukoba
 
 # ================== KONFIGURACIJA ==================
@@ -36,7 +36,7 @@ class RAGConfig:
     
     # Model
     LLM_MODEL = "gpt-4o-mini"
-    EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
+    EMBEDDING_MODEL = "text-embedding-3-large"
     
     SLEEP_BETWEEN_QUERIES = 0.5 
     
@@ -89,9 +89,9 @@ def initialize_models():
     print(f"\n[INIT] Inicijaliziram OpenAI: {RAGConfig.LLM_MODEL}")
     
     # 1. Embedding (Lokalno)
-    embed_model = HuggingFaceEmbedding(
+    embed_model = OpenAIEmbedding(
         model_name=RAGConfig.EMBEDDING_MODEL,
-        cache_folder="./model_cache"
+        api_key=RAGConfig.OPENAI_API_KEY
     )
     
     # 2. LLM (LlamaIndex Wrapper za RAG)
@@ -145,7 +145,7 @@ def process_query(index, question, expected, llm_rag):
     """
     
     # --- 1. RAG GENERACIJA (Koristi LlamaIndex) ---
-    retriever = index.as_retriever(similarity_top_k=3)
+    retriever = index.as_retriever(similarity_top_k=5)
     nodes = retriever.retrieve(question)
     context = "\n".join([n.text for n in nodes])
     
