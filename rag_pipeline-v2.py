@@ -28,7 +28,7 @@ class RAGConfig:
     
     PDF_INPUT_DIR = "./Dokumenti"
     RESULTS_DIR = "./Rezultati" 
-    QUESTION_DATASET_PATH = "./evaluation_questions.json"
+    QUESTION_DATASET_PATH = "./eq_fiskalizacija.json"
     
     LLM_MODEL = "gpt-4o-mini"
     EMBEDDING_MODEL = "text-embedding-3-large"
