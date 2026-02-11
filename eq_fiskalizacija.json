@@ -110,7 +110,7 @@
       "id": "f2_008",
       "category": "mikroeracun",
       "question": "Što je aplikacija MIKROeRAČUN i tko je može koristiti?",
-      "expected_answer": "MIKROeRAČUN je besplatna aplikacija Porezne uprave u kojoj je Porezna uprava pristupna točka odnosno informacijski posrednik. Pravo korištenja imaju izdavatelj i primatelj eRačuna koji: nisu upisani u registar obveznika PDV-a, nisu javni naručitelji, te su korisnici sustava ePorezna. Aplikacija omogućava zaprimanje eRačuna od 1.1.2026., izdavanje eRačuna od 1.1.2027., fiskalizaciju i čuvanje eRačuna.",
+      "expected_answer": "MIKROeRAČUN je besplatna aplikacija Porezne uprave u kojoj je Porezna uprava pristupna točka odnosno informacijski posrednik. Pravo korištenja imaju izdavatelj i primatelj eRačuna koji: nisu upisani u registar obveznika PDV-a, nisu javni naručitelji, te su korisnici sustava ePorezna. Aplikacija omogućava zaprimanje eRačuna od 1.1.2026., izdavanje eRačuna od 1.1.2027., fiskalizaciju  zaprimanja i izdavanja eRačuna i čuvanje eRačuna u rokovima čuvanja.",
       "answer_type": "opis_aplikacije",
       "difficulty": "medium",
       "key_concepts": [
@@ -1008,7 +1008,7 @@
       "id": "f2_072",
       "category": "fiskalizacija_postupak",
       "question": "Koji se podaci šalju u fiskalizacijskoj poruci za eRačun (F2.0)?",
-      "expected_answer": "Šalju se: datum, broj računa, dospijeće, izdavatelj, primatelj, stavke (količina, vrsta, KPD, cijena bez PDV), datum isporuke, osnovica, stopa PDV-a, referenca na prethodni račun i IBAN izdavatelja.",
+      "expected_answer": "U fiskalizacijskoj poruci Poreznoj upravi dostavljaju se sljedeći podaci: 1. datum izdavanja računa, broj računa i datum dospijeća plaćanja, 2. izdavatelj i primatelj računa, 3. količina, vrsta isporučenih dobara i/ili obavljenih usluga, uključujući KPD, osim u slučaju računa za predujam te jedinična cijena bez PDV-a, 4. datum isporuke dobara ili obavljenih usluga ili datum primitka predujma, 5. porezna osnovica za svaku poreznu stopu ili izuzeće, 6. stopa PDV-a i iznos PDV-a koji treba platiti, osim ako se primjenjuje poseban postupak, 7. broj i datum prvobitnog računa, u slučaju promjena, 9. broj bankovnog ili virtualnog računa izdavatelja eRačuna",
       "answer_type": "enumeracija",
       "difficulty": "medium",
       "key_concepts": [
@@ -1022,7 +1022,7 @@
       "id": "f2_073",
       "category": "inozemni_primatelji",
       "question": "Kakav se račun izdaje za isporuku unutar EU ili u treće zemlje?",
-      "expected_answer": "Za isporuke osobama koje nisu hrvatski obveznici eRačuna (sjedište u EU ili trećim zemljama) ne izdaje se eRačun prema Zakonu o fiskalizaciji. Izdaje se račun u prikladnom obliku (npr. papirnati/PDF) i ne provodi se eIzvještavanje.",
+      "expected_answer": "Za isporuke osobama koje nisu hrvatski obveznici eRačuna (sjedište u EU ili trećim zemljama) ne izdaje se eRačun prema Zakonu o fiskalizaciji. Izdaje se papirnati račun.",
       "answer_type": "postupak",
       "difficulty": "medium",
       "key_concepts": [
@@ -1199,7 +1199,7 @@
       "id": "f2_086",
       "category": "tehnicka_greska",
       "question": "Tko je odgovoran ako eRačun ima pogrešan datum (npr. 1.1.1901.)?",
-      "expected_answer": "Odgovoran je pošiljatelj ili njegov informacijski sustav. Takav datum obično je rezultat tehničke 'default' vrijednosti u ERP-u pošiljatelja. Sustav Porezne uprave ne generira taj podatak.",
+      "expected_answer": "Porezna uprava svjesna je pojedinačnih primjera eRačuna u kojima je zabilježen nelogičan ili očito pogrešan datum isporuke, uključujući i slučajeve u kojima se pojavljuje datum 1. siječnja 1901. godine. Važno je pritom naglasiti da se u takvim slučajevima ne radi o grešci središnjeg sustava Fiskalizacije 2.0, već o podatku koji je u XML eRačun unio pošiljatelj ili informacijski sustav pošiljatelja. Sustav Fiskalizacije 2.0 i razmjene eRačuna temelji se na strukturiranim XML/UBL porukama u kojima je pošiljatelj odgovoran za ispravnost i logičku dosljednost dostavljenih podataka, uključujući datum isporuke. Određeni informacijski sustavi, u slučaju nepopunjenog ili pogrešno mapiranog datuma, koriste tehničke “zadane” (default) vrijednosti koje mogu rezultirati povijesnim datumima poput 1901. godine. Takav podatak ne nastaje izmjenom tijekom razmjene, niti ga generira sustav Porezne uprave. Utjecaj na porezne obveze Naglašavamo da zaprimanje eRačuna s očito pogrešnim datumom isporuke ne znači automatski poreznu obvezu niti zakašnjenje u plaćanju. Porezni obveznici dužni su postupati u skladu s važećim poreznim propisima, pri čemu se u slučaju uočenih pogrešaka koristi institut ispravka računa. Ovim putem ponovno napominjemo kako Porezna uprava tijekom implementacijskog razdoblja Fiskalizacije 2.0 neće primjenjivati sankcije za nenamjerne pogreške, osobito one koje proizlaze iz tehničkih prilagodbi sustava.",
       "answer_type": "odgovornost",
       "difficulty": "easy",
       "key_concepts": [
@@ -1329,7 +1329,7 @@
       "id": "f2_096",
       "category": "eizvjestavnje_odbijanje",
       "question": "Treba li evidentirati odbijeni ulazni račun u knjigama?",
-      "expected_answer": "Svaka knjigovodstvena isprava mora se evidentirati. Iako se ukida Knjiga U-RA, praksa ostaje ista - porezni obveznik mora osigurati podatke za obračun PDV-a.",
+      "expected_answer": "Svaka knjigovodstvena isprava mora se evidentirati. Iako se ukida Knjiga ulaznih računa, praksa ostaje ista - porezni obveznik mora osigurati podatke za obračun PDV-a.",
       "answer_type": "knjigovodstvo",
       "difficulty": "medium",
       "key_concepts": [
@@ -1442,21 +1442,22 @@
     {
       "id": "f2_105",
       "category": "clanak_39",
-      "question": "Treba li račun fiskaliziran po F1.0 (članak 39) poslati i kao eRačun?",
-      "expected_answer": "Ne. Račun se izdaje samo jednom. Ako je izdan i fiskaliziran po F1.0, ne može se izdati i fiskalizirati kao eRačun (F2.0).",
+      "question": "Koje je postupanje u slučaju B2B transakcije gdje je isporučitelj izvan sustava PDV-a, a način plaćanja kartica/gotovina?",
+      "expected_answer": "U 2026. godini, za isporučitelje koji nisu u sustavu PDV-a ne primjenjuje se članak 39. Zakona o fiskalizaciji. Navedeni obveznici, i u slučaju B2B transakcija naplaćenih karticom ili gotovinom, mogu izdavati papirnati račun. Nadalje, treći dio Zakona stupa na snagu u pravilu 1. siječnja 2026. i uređuje izdavanje računa između poduzetnika. Kako se ova obveza za one koji nisu u sustavu PDV-a primjenjuje od 1. siječnja 2027. znači da ovi obveznici nemaju obveze iz ovog dijela Zakona tijekom 2026.godine. Zaključno ako izdavatelj računa nije u sustavu PDV-a tijekom 2026. godine može izdavati „papirnate“ račune bez obzira kako se isti naplaćuju. Dakle i u slučaju kada taj obveznik u 2026. godini izdaje račun u B2B segmentu naplaćen karticom ili gotovinom nema obveze fiskalizacije.",
       "answer_type": "zabrana",
       "difficulty": "medium",
       "key_concepts": [
-        "dvostruko izdavanje",
+        "obveznici izvan sustava PDV-A",
         "članak 39",
-        "jedan račun"
+        "gotovina",
+        "kartica"
       ]
     },
     {
       "id": "f2_106",
       "category": "clanak_39",
-      "question": "Od kada se može primjenjivati XML shema s OIB-om kupca za F1.0?",
-      "expected_answer": "Od 1. siječnja 2026. godine.",
+      "question": "Od kada će se provoditi postupak fiskalizacije računa iz dostavu OIB-a primatelja računa u XML shemi?",
+      "expected_answer": "Članak 39. Zakona stupa na snagu 1. siječnja 2026. godine što onda znači da je od 1. siječnja 2026. godine moguće provoditi postupak fiskalizacije računa putem XML sheme gdje se navodi OIB primatelja računa u B2B segmentu. Aktualna tehnička dokumentacija je objavljena na stranicama portala Fiskalizacija",
       "answer_type": "datum",
       "difficulty": "easy",
       "key_concepts": [
@@ -1469,7 +1470,7 @@
       "id": "f2_107",
       "category": "indikator_kopije",
       "question": "Što je 'indikator kopije' računa i kada se koristi?",
-      "expected_answer": "Indikator kopije (HR-BT-1) je oznaka u eRačunu koja omogućuje ponovno slanje istog računa s ispravljenim podacima koji NE utječu na obračun poreza (npr. kriva referenca, napomena). Time se izbjegava storniranje računa. Vrijednost je 'true' ili 'false'.",
+      "expected_answer": "Prema članku 43. Zakon kada se ispravlja podatak na eRačunu koji ne utječe na obračun poreza, eRačun se može u istom razdoblju oporezivanja izdati pod istim brojem, uz obvezno navođenje podatka »indikator kopije računa«. Ispravljeni eRačun obveznici fiskalizacije eRačuna dužni su fiskalizirati odmah nakon provedenog slanja i zaprimanja. Činjenica da je proveden navedeni postupak, kojim se izbjegava korak storniranja računa, označuje se korištenjem Indikatora kopije. Vrijednost podatka se iskazuje kao 'true' ili kao 'false'. Navedeni podatak se nalazi u Specifikacija osnovne uporabe eRačuna s proširenjima: HR-BT-1; Indikator kopije računa --> Oznaka je li račun kopija već poslanog računa ili izvornik (poslan prvi puta). Dodatno napominjemo da je korištenje Indikatora kopije propisano kao mogućnost, a ne kao obveza.",
       "answer_type": "tehnicki_pojam",
       "difficulty": "hard",
       "key_concepts": [
@@ -1522,7 +1523,7 @@
       "id": "f2_111",
       "category": "tehnicka_greska",
       "question": "Što pristupna točka mora učiniti ako dobije poruku o pogrešci?",
-      "expected_answer": "Mora postupiti prema opisu pogreške i prijedlogu ispravka koji se vraća u XML formatu.",
+      "expected_answer": "Sustav fiskalizacije vraća poruke o pogreškama u XML formatu, u skladu s javno objavljenim tehničkim shemama. Poruke sadrže opis pogreške i prijedlog ispravka, prema kojima pristupna točka treba postupiti.",
       "answer_type": "procedura",
       "difficulty": "medium",
       "key_concepts": [
@@ -1535,7 +1536,7 @@
       "id": "f2_112",
       "category": "mikroeracun",
       "question": "Može li obrtnik koji izlazi iz sustava PDV-a odmah koristiti MIKROeRAČUN?",
-      "expected_answer": "Pristup je moguć tek nakon zatvaranja obveze PDV-a u RPO-u. Preporuča se predati zahtjev prije isteka godine kako bi se na vrijeme omogućio pristup.",
+      "expected_answer": "Sustav je programiran na način da nijedan porezni obveznik koji ima otvorenu obvezu poreza na dodanu vrijednost u RPO-u, ne može pristupiti aplikaciji MIKROeRAČUN. Pristup se omogućuje tek po zatvaranju obveze. Kako bi se obveznicima omogućio pristup aplikaciji MIKROeRAČUN na vrijeme, porezni obveznik koji smatra da ostvaruje uvjete za ispisom, treba predati zahtjev nadležnoj ispostavi prije isteka godine, pri čemu bi se izvršio ispis iz registra i time ostvarilo pravo pristupa aplikaciji, a tek potom žurno nastavilo s obradom zahtjeva i donošenjem rješenja (bilo o ispisu, bilo o odbijanju zahtjeva pri čemu bi se obveznika vratilo u sustav PDV-a te bi odabrao drugog informacijskog posrednika).",
       "answer_type": "procedura",
       "difficulty": "medium",
       "key_concepts": [
@@ -1548,7 +1549,7 @@
       "id": "f2_113",
       "category": "specificne_situacije",
       "question": "Mora li obrt u mirovanju aktivirati MIKROeRAČUN?",
-      "expected_answer": "Ne dok ne posluje. Ali ako nastane potreba za zaprimanjem eRačuna (npr. trošak), mora ga zaprimiti kao eRačun i tada treba aktivirati uslugu.",
+      "expected_answer": "S obzirom da porezni obveznik ne obavlja poslovanje, nema potrebe da u ovom trenutku poduzima radnje za prilagodbu Zakona o fiskalizaciji. Međutim, ukoliko dođe do potrebe zaprimanja eRačuna navedeni porezni obveznik mora pravovremeno poduzeti korake za prilagodbu jer se već prvi takav mora zaprimiti kao eRačun. U tom dijelu važno je da porezni obveznik procijeni hoće li zaprimati ili izdavati određene račune koje bi trebao zaprimati ili izdavati kao eRačun jer se smatra primateljem odnosno izdavateljem eRačuna. U tom dijelu napominjemo da je u sklopu ePorezne razvijena aplikacija (programsko rješenje MIKROeRAČUN). Prema Zakonu o fiskalizaciji aplikacija MIKROeRAČUN omogućava izdavanje, zaprimanje i pohranu eRačuna, kao i fiskalizaciju izdanih i zaprimljenih eRačuna. Pravo na korištenje besplatne aplikacije MIKROeRAČUN imaju izdavatelj i primatelj eRačuna pod uvjetom da su korisnici sustava ePorezna, nisu upisani u registar obveznika PDV-a prema propisu o PDV-u i nisu obveznici primjene propisa o elektroničkom izdavanju računa u javnoj nabavi kao javni naručitelji.",
       "answer_type": "obveza",
       "difficulty": "medium",
       "key_concepts": [
@@ -1600,7 +1601,7 @@
       "id": "f2_117",
       "category": "iso_certifikat",
       "question": "Zašto informacijski posrednik mora posjedovati ISO certifikat?",
-      "expected_answer": "ISO certifikat (poput ISO 27001) garantira sigurnost upravljanja podacima, što je nužno s obzirom na osjetljivost podataka koji se razmjenjuju u sustavu fiskalizacije.",
+      "expected_answer": "Posjedovanje ISO certifikata garantira sigurnost upravljanja podacima, što je nužnost u primjeni Zakona.",
       "answer_type": "uvjet_poslovanja",
       "difficulty": "medium",
       "key_concepts": [
@@ -1613,7 +1614,7 @@
       "id": "f2_118",
       "category": "erp_provider",
       "question": "Je li ERP provider isto što i informacijski posrednik?",
-      "expected_answer": "Samo ako sam uspostavlja komunikaciju s AMS-om i nudi uslugu razmjene na tržištu. Ako se spaja preko drugog posrednika, onda nije.",
+      "expected_answer": "Ako je ERP spojen s Informacijskim posrednikom, ERP nije pristupna točka već je pristupna točka informacijski posrednik. ERP pružatelji usluga koji prodaju ERP rješenja za kreiranje računa i šalju ih preko informacijskih posrednika s kojima su integrirani nisu pristupna točka i u tom slučaju informacijski posrednici su ti koji nude uslugu razmjene eRačuna i oni su pristupne točke. Ako će neki ERP pružatelj usluge razviti usluge (razmjenu eRačuna/Fiskalizaciju/objavu u adresar) i sam ih nuditi korisnicima kao uslugu na tržištu, onda on postaje informacijski posrednik.",
       "answer_type": "definicija",
       "difficulty": "medium",
       "key_concepts": [
@@ -1626,7 +1627,7 @@
       "id": "f2_119",
       "category": "edi_racuni",
       "question": "Mogu li se koristiti EDI računi?",
-      "expected_answer": "Da, ali posrednik mora podržavati AS4 za komunikaciju s drugima. EDI računi se također moraju fiskalizirati.",
+      "expected_answer": "Da. Zakonom nisu ograničene druge metode i tehnike razmjene eRačuna, ali se u Tehničkoj specifikaciji propisuje da svaki informacijski posrednik minimalno mora znati zaprimiti račun po AS4 protokolu. Na taj način prema Zakonu odnosno prema tehničkim specifikacijama koje prate navedeni Zakon stvaraju se preduvjeti da svaki informacijski posrednik može komunicirati sa svakim bez potrebe da se rade međusobne interkonekcije. Međutim, isto tako nije spriječeno odnosno onemogućeno da se rade i drugi načini razmjene eRačuna stoga će se moći koristiti EDI računi.",
       "answer_type": "tehnicki_zahtjev",
       "difficulty": "medium",
       "key_concepts": [
@@ -1639,7 +1640,7 @@
       "id": "f2_120",
       "category": "tehnicki_detalji",
       "question": "Može li se eRačun 'uploadati' izravno na portal Porezne uprave?",
-      "expected_answer": "Ne. Porezna uprava nije centralna točka za razmjenu. Razmjena ide preko pristupnih točaka. Na portal se može ručno unijeti samo fiskalizacijska poruka (FiskAplikacija), ali ne i cijeli eRačun za razmjenu.",
+      "expected_answer": "Ne. Porezna uprava nije centralna točka za razmjenu. Razmjena ide preko pristupnih točaka. Na portal se može ručno unijeti samo fiskalizacijska poruka putem aplikacije ePorezna, ali ne i cijeli eRačun za razmjenu.",
       "answer_type": "zabrana",
       "difficulty": "medium",
       "key_concepts": [
@@ -1665,7 +1666,7 @@
       "id": "f2_122",
       "category": "eracun_polja",
       "question": "Što se upisuje u polje 'Identifikator sheme'?",
-      "expected_answer": "Upisuje se oznaka 'CG' za KPD klasifikaciju.",
+      "expected_answer": "Upisuje se oznaka 'CG' za KPD klasifikaciju. Navedeno se koristi i za usluge i za robe.",
       "answer_type": "tehnicki_zahtjev",
       "difficulty": "hard",
       "key_concepts": [
@@ -1677,8 +1678,8 @@
     {
       "id": "f2_123",
       "category": "eracun_polja",
-      "question": "Koja je razlika između 'Terećenja' (383) i 'Korektivnog računa' (384)?",
-      "expected_answer": "Terećenje (383) dodatno tereti izvorni račun (povećava iznos). Korektivni račun (384) može imati pozitivne i negativne stavke i služi za opće korekcije.",
+      "question": "Koja je razlika između 383-Terećenje i 384-Korektivni račun?",
+      "expected_answer": "Korektivni račun se može koristiti na način da postoje pozitivne i negativne stavke i služi općenito za korekcije koje se odnose na referencirani izvorni račun. Utječe na PDV ovisno o tome da li su stavke negativne ili pozitivne. Terećenje je zapravo opet račun koji dodatno tereti referencirani račun i utječe na PDV jer ima nova terećenja. Npr. izdan je račun na 100.00 + PDV25% = 125.00. Terećenje nakon tog računa koje kaže da je osnovica uvećana za dodatnih 20.00 + PDV25% = 25.00. Obveza PDV po ta dva računa je 25.00 + 5.00 = 30.00",
       "answer_type": "usporedba",
       "difficulty": "hard",
       "key_concepts": [
@@ -1692,7 +1693,7 @@
       "id": "f2_124",
       "category": "eracun_polja",
       "question": "Je li 'Referenca na ugovor' (BT-12) obvezna?",
-      "expected_answer": "Samo ako se poslovni odnos temelji na ugovoru.",
+      "expected_answer": "Navedeni podatak nije obvezan, ali ako se poslovni odnos temelji na ugovoru, on se navodi i obvezan je, a ako ne postoji ugovor na temelju kojeg se izdaje eRačun, podatak nije obavezan. Očekuje se podatak o broju ugovora (identifikacija ugovora koja mora biti jedinstvena).",
       "answer_type": "tehnicki_zahtjev",
       "difficulty": "medium",
       "key_concepts": [
@@ -1717,8 +1718,8 @@
     {
       "id": "f2_126",
       "category": "marza_vatex",
-      "question": "Kako se u eRačunu označava posebni postupak oporezivanja marže (turističke agencije, rabljena roba)?",
-      "expected_answer": "Iako je stopa PDV-a 0% (iznos poreza 0.00), ne smije se koristiti samo kategorija 'E'. Moraju se koristiti VATEX kodovi u polju BT-121 kako bi se preciziralo oslobođenje. Npr. VATEX-EU-D za putničke agencije ili VATEX-EU-F za rabljenu robu.",
+      "question": "Kako se u eRačunu označava posebni postupak oporezivanja marže (turističke agencije, rabljena dobra...)?",
+      "expected_answer": "Prema Zakonu o PDV-u u slučaju primjene posebnog postupka oporezivanja putničkih agencija, odnosno posebnog postupka oporezivanja marže za rabljena dobra, umjetnička djela, kolekcionarske ili antikne predmete, u računu ne smije biti iskazan iznos razlike u cijeni, kao ni iznos PDV-a. Porezni obveznik koji primjenjuje te postupke u računu ovisno o tome koji postupak primjenjuje navodi odgovarajuću napomenu „posebni postupak oporezivanja-putničke agencije“, „posebni postupak oporezivanja marže - rabljena dobra”, „posebni postupak oporezivanja marže - umjetnička djela“, odnosno „posebni postupak oporezivanja marže - kolekcionarski ili antikni predmeti”. Zakon o PDV-u u tom dijelu neće se mijenjati od 1. siječnja 2026.godine. Iako marža nije pravo oslobođenje, ona se na računu prema kupcu ponaša slično jer nema iskazanog iznosa PDV-a. Zato se u polje za stopu upisuje 0%, a iznos poreza je 0.00. Budući da bi samo oznaka 'E' Poreznoj upravi signalizirala da je isporuka oslobođena poreza (što kod marže nije točno), Hrvatska je uvela obvezno korištenje VATEX kodova u polju BT-121 (Kod razloga oslobođenja). VATEX kod djeluje kao precizni identifikator koji mijenja značenje kategorije 'E'. Ključni VATEX kodovi za maržu u HR specifikaciji: Prema priloženom šifrarniku, ovo su kodovi koji 'E' kategoriju pretvaraju u maržu: VATEX-EU-D: Posebni postupak za putničke agencije. VATEX-EU-F: Posebni postupak za rabljenu robu. VATEX-EU-I: Posebni postupak za umjetnička djela. VATEX-EU-J: Posebni postupak za kolekcionarske predmete i antikvitete.",
       "answer_type": "tehnicki_zahtjev",
       "difficulty": "expert",
       "key_concepts": [
@@ -1732,13 +1733,13 @@
     {
       "id": "f2_127",
       "category": "pdv_ukidanje",
-      "question": "Hoće li se ukinuti obrazac PDV-F i Knjiga U-RA?",
-      "expected_answer": "Da. Usklađenjem propisa ukida se PDV-F (evidencija putničkog prometa) i Knjige U-RA i I-RA. Porezni obveznici i dalje moraju osigurati podatke za obračun PDV-a, ali nemaju obvezu vođenja tih specifičnih knjiga u dosadašnjem obliku.",
+      "question": "Hoće li se ukinuti obrazac PDV-F i Knjiga ulaznih računa?",
+      "expected_answer": "Da. Usklađenjem propisa ukida se PDV-F (evidencija putničkog prometa) i Knjige ulaznih računa i izlaznih računa. Porezni obveznici i dalje moraju osigurati podatke za obračun PDV-a, ali nemaju obvezu vođenja tih specifičnih knjiga u dosadašnjem obliku.",
       "answer_type": "zakonska_izmjena",
       "difficulty": "medium",
       "key_concepts": [
         "PDV-F",
-        "U-RA",
+        "ulaznih računa",
         "ukidanje",
         "1.1.2026"
       ]
