@@ -1,0 +1,31 @@
+============================================================
+ IZVJEŠTAJ O STATISTIČKOJ ZNAČAJNOSTI (ANOVA & T-TEST) 
+============================================================
+
+1. JEDNOSMJERNA ANOVA (Usporedba svih strategija)
+--------------------------------------------------
+F-statistika: 10.8323
+P-vrijednost: 4.7031e-07
+ZAKLJUČAK: P-vrijednost je < 0.05. Postoji statistički značajna razlika u performansama između različitih RAG strategija.
+
+2. T-TEST (Je li pobjednička strategija značajno bolja?)
+--------------------------------------------------
+Najbolja strategija (prema prosjeku): '512 Size, 50 Overlap' (Prosjek: 0.810)
+
+Usporedba: 512 Size, 50 Overlap vs Semantic Chunking
+   -> T-statistika: 1.161, P-vrijednost: 0.2461 (ns)
+   -> REZULTAT: Nema značajne razlike (ns). Pobjeda bi mogla biti slučajna.
+
+Usporedba: 512 Size, 50 Overlap vs 1024 Size, 100 Overlap
+   -> T-statistika: 1.213, P-vrijednost: 0.2254 (ns)
+   -> REZULTAT: Nema značajne razlike (ns). Pobjeda bi mogla biti slučajna.
+
+Usporedba: 512 Size, 50 Overlap vs 128 Size, 20 Overlap
+   -> T-statistika: 5.214, P-vrijednost: 0.0000 (***)
+   -> REZULTAT: '512 Size, 50 Overlap' je STATISTIČKI ZNAČAJNO bolja.
+
+3. T-TEST ZA DATASETOVE (Težina dokumenata)
+--------------------------------------------------
+Usporedba: Dataset_1 vs Dataset_2
+T-statistika: -20.152, P-vrijednost: 0.0000
+ZAKLJUČAK: P-vrijednost < 0.05. Postoji statistički značajna razlika u rezultatima između datasetova. Jedan set dokumenata je modelu bio znatno teži od drugog.

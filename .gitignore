@@ -2,3 +2,4 @@
 .env
 # Model cache
 model_cache/
+Storage/

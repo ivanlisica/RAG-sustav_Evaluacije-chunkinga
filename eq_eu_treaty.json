@@ -1,0 +1,1337 @@
+{
+  "evaluation_questions": [
+    {
+      "id": "ac_001",
+      "category": "accession_documents",
+      "question": "What is the primary document containing the conditions for Croatia's admission to the EU?",
+      "expected_answer": "The primary document is the 'Act concerning the conditions of accession of the Republic of Croatia and the adjustments to the Treaty on European Union, the Treaty on the Functioning of the European Union and the Treaty establishing the European Atomic Energy Community'.",
+      "answer_type": "identification",
+      "difficulty": "easy",
+      "key_concepts": [
+        "Act of Accession",
+        "conditions of admission",
+        "Treaty adjustments"
+      ]
+    },
+    {
+      "id": "ac_002",
+      "category": "timeline",
+      "question": "On what date was the Commission Opinion on Croatia's application for accession issued?",
+      "expected_answer": "The Commission Opinion on the application for accession to the European Union by the Republic of Croatia was issued on 12 October 2011.",
+      "answer_type": "date",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Commission Opinion",
+        "12 October 2011",
+        "application for accession"
+      ]
+    },
+    {
+      "id": "ac_003",
+      "category": "institutional_changes",
+      "question": "By how many members was the European Parliament increased to account for Croatia's accession?",
+      "expected_answer": "The number of members of the European Parliament was increased by 12 members from Croatia for the period from accession until the end of the 2009-2014 term.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "European Parliament",
+        "12 members",
+        "2009-2014 term"
+      ]
+    },
+    {
+      "id": "ac_004",
+      "category": "membership_eligibility",
+      "question": "What are the Copenhagen criteria mentioned in the Commission Opinion?",
+      "expected_answer": "The criteria established in June 1993 include: political criteria (stability of institutions guaranteeing democracy, rule of law, human rights, and protection of minorities), economic criteria (functioning market economy and capacity to cope with competitive pressure), and the acquis criterion (ability to take on membership obligations).",
+      "answer_type": "definition",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Copenhagen criteria",
+        "political criteria",
+        "economic criteria",
+        "acquis criterion"
+      ]
+    },
+    {
+      "id": "ac_005",
+      "category": "schengen_acquis",
+      "question": "Does the full Schengen acquis apply to Croatia immediately upon accession?",
+      "expected_answer": "No. While certain provisions building upon the Schengen acquis are binding from accession (listed in Annex II), other provisions only apply pursuant to a subsequent Council decision after verification that necessary conditions have been met.",
+      "answer_type": "policy_explanation",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Schengen acquis",
+        "Annex II",
+        "Council decision",
+        "verification"
+      ]
+    },
+    {
+      "id": "ac_006",
+      "category": "economic_and_monetary_union",
+      "question": "What is Croatia's status regarding the Economic and Monetary Union upon accession?",
+      "expected_answer": "Croatia participates in the Economic and Monetary Union from the date of accession as a Member State with a derogation within the meaning of Article 139 of the TFEU.",
+      "answer_type": "legal_status",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Economic and Monetary Union",
+        "derogation",
+        "Article 139 TFEU"
+      ]
+    },
+    {
+      "id": "ac_007",
+      "category": "financial_provisions",
+      "question": "What was the total amount of Croatia's share of the paid-in capital for the European Investment Bank?",
+      "expected_answer": "Croatia's share of the capital paid in for the subscribed capital of the European Investment Bank was EUR 42,720,000, to be paid in eight equal instalments.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "EIB",
+        "paid-in capital",
+        "EUR 42,720,000"
+      ]
+    },
+    {
+      "id": "ac_008",
+      "category": "transitional_measures",
+      "question": "What transitional measures were implemented regarding the free movement of workers?",
+      "expected_answer": "Present Member States could apply national measures regulating access to their labour markets by Croatian nationals for a two-year period, with possible extensions up to a total of seven years in case of serious disturbances.",
+      "answer_type": "policy_explanation",
+      "difficulty": "hard",
+      "key_concepts": [
+        "free movement of workers",
+        "transitional measures",
+        "labour market access"
+      ]
+    },
+    {
+      "id": "ac_009",
+      "category": "agriculture",
+      "question": "What is the 'mlado vino portugizac' derogation for Croatia?",
+      "expected_answer": "Croatia was allowed a derogation to place on its market or export to third countries wines with the denomination 'Mlado vino portugizac' until the clearance of stocks existing at the date of accession.",
+      "answer_type": "specific_derogation",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Mlado vino portugizac",
+        "wine stocks",
+        "derogation"
+      ]
+    },
+    {
+      "id": "ac_010",
+      "category": "institutional_voting",
+      "question": "How many weighted votes was Croatia allocated in the Council until 31 October 2014?",
+      "expected_answer": "Croatia was allocated 7 weighted votes in the Council.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Council voting",
+        "weighted votes",
+        "7 votes"
+      ]
+    },
+    {
+      "id": "ac_011",
+      "category": "justice_and_monitoring",
+      "question": "Which specific areas were the focus of the Commission's pre-accession monitoring?",
+      "expected_answer": "Monitoring focused on the judiciary, the fight against corruption, fundamental rights, justice, freedom and security (including border management), and competition policy (shipbuilding and steel restructuring).",
+      "answer_type": "enumeration",
+      "difficulty": "hard",
+      "key_concepts": [
+        "monitoring",
+        "judiciary",
+        "corruption",
+        "competition policy"
+      ]
+    },
+    {
+      "id": "ac_012",
+      "category": "agriculture_land",
+      "question": "How long was the transitional period during which Croatia could maintain restrictions on the acquisition of agricultural land?",
+      "expected_answer": "Croatia could maintain restrictions on the acquisition of agricultural land by EU/EEA nationals for seven years from the date of accession.",
+      "answer_type": "duration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "agricultural land",
+        "7-year restriction",
+        "transitional period"
+      ]
+    },
+    {
+      "id": "ac_013",
+      "category": "customs_union",
+      "question": "What is the 'Neum corridor' provision in the Act of Accession?",
+      "expected_answer": "It allows for the waiver of exit and entry summary declarations for Union products crossing the territory of Bosnia and Herzegovina at Neum when moving between parts of Croatia's territory.",
+      "answer_type": "definition",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Neum corridor",
+        "summary declaration waiver",
+        "customs"
+      ]
+    },
+    {
+      "id": "ac_014",
+      "category": "fisheries",
+      "question": "What specific islands in Croatia received EFF aid derogations for all enterprises?",
+      "expected_answer": "The islands are Dugi otok, Vis, Mljet, and Lastovo.",
+      "answer_type": "enumeration",
+      "difficulty": "hard",
+      "key_concepts": [
+        "European Fisheries Fund",
+        "Dugi otok",
+        "Vis",
+        "Mljet",
+        "Lastovo"
+      ]
+    },
+    {
+      "id": "ac_015",
+      "category": "shipbuilding",
+      "question": "What were the key conditions for restructuring the Croatian shipbuilding industry?",
+      "expected_answer": "Conditions included: privatization via competitive tender, counting all state aid since March 2006 as restructuring aid, a 40% own resource contribution, and a reduction of production capacity to 372,346 CGT.",
+      "answer_type": "policy_explanation",
+      "difficulty": "hard",
+      "key_concepts": [
+        "shipbuilding restructuring",
+        "privatization",
+        "capacity reduction",
+        "CGT"
+      ]
+    },
+    {
+      "id": "ac_016",
+      "category": "environment",
+      "question": "What was the required share of biodegradable municipal waste reduction for Croatia by 31 December 2013?",
+      "expected_answer": "The share was to be reduced to 75% of the total amount (by weight) produced in 1997.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "biodegradable waste",
+        "landfill directive",
+        "75% reduction"
+      ]
+    },
+    {
+      "id": "ac_017",
+      "category": "judiciary_reform",
+      "question": "What is the commitment regarding war crimes cases in Annex VII?",
+      "expected_answer": "Croatia committed to continue improving the handling of domestic war crimes cases.",
+      "answer_type": "description",
+      "difficulty": "medium",
+      "key_concepts": [
+        "war crimes",
+        "Annex VII",
+        "judiciary"
+      ]
+    },
+    {
+      "id": "ac_018",
+      "category": "taxation",
+      "question": "What is the VAT exemption threshold for small enterprises in Croatia mentioned in Annex III?",
+      "expected_answer": "The threshold is EUR 35,000.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "VAT",
+        "small enterprises",
+        "EUR 35,000"
+      ]
+    },
+    {
+      "id": "ac_019",
+      "category": "food_safety",
+      "question": "How long was the transitional period for Croatia to stop using non-compliant cages for laying hens?",
+      "expected_answer": "Croatia had to ensure the use of such cages stopped at the latest 12 months after accession.",
+      "answer_type": "duration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "laying hens",
+        "cages",
+        "12-month transition"
+      ]
+    },
+    {
+      "id": "ac_020",
+      "category": "steel_sector",
+      "question": "Which steel producer was required to reimburse restructuring aid plus interest?",
+      "expected_answer": "CMC Sisak d.o.o. was required to reimburse aid amounting to HRK 19,117,572.36 plus compound interest.",
+      "answer_type": "identification",
+      "difficulty": "hard",
+      "key_concepts": [
+        "steel sector",
+        "CMC Sisak",
+        "aid reimbursement"
+      ]
+    },
+    {
+      "id": "ac_021",
+      "category": "language",
+      "question": "Is the Croatian version of the original EU Treaties considered authentic?",
+      "expected_answer": "Yes, from the date of accession, the Bulgarian, Croatian, Czech, Danish, English, Estonian, Finnish, Greek, Hungarian, Irish, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish versions are all authentic.",
+      "answer_type": "legal_status",
+      "difficulty": "easy",
+      "key_concepts": [
+        "authentic text",
+        "Croatian language",
+        "Treaties"
+      ]
+    },
+    {
+      "id": "ac_022",
+      "category": "transport",
+      "question": "What was the initial period during which Croatian hauliers were excluded from cabotage in other Member States?",
+      "expected_answer": "They were excluded for a period of two years from the date of accession.",
+      "answer_type": "duration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "transport policy",
+        "cabotage",
+        "road haulage"
+      ]
+    },
+    {
+      "id": "ac_023",
+      "category": "environment_emissions",
+      "question": "By what percentage was Croatia's greenhouse gas emission reduction effort set for 2020?",
+      "expected_answer": "The effort was set at 11% compared to 2005 levels.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "greenhouse gas",
+        "11%",
+        "reduction target"
+      ]
+    },
+    {
+      "id": "ac_024",
+      "category": "agriculture_sugar",
+      "question": "What was the transitional tariff quota for raw cane sugar for refining reserved for Croatia?",
+      "expected_answer": "An annual autonomous import quota of 40,000 tonnes was reserved for up to three marketing years at a duty of EUR 98.00 per tonne.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "sugar quota",
+        "raw cane sugar",
+        "40,000 tonnes"
+      ]
+    },
+    {
+      "id": "ac_025",
+      "category": "institution_judicial",
+      "question": "How many judges does the General Court consist of according to the amended Protocol?",
+      "expected_answer": "The General Court consists of 28 Judges.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "General Court",
+        "28 Judges",
+        "Protocol amendment"
+      ]
+    },
+    {
+      "id": "ac_026",
+      "category": "financial_assistance",
+      "question": "What was the total commitment appropriation for the Transition Facility for Croatia in 2013?",
+      "expected_answer": "The total was EUR 29 million.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Transition Facility",
+        "EUR 29 million",
+        "2013"
+      ]
+    },
+    {
+      "id": "ac_027",
+      "category": "customs_status",
+      "question": "What documents can be used as proof of Union status for trade within the enlarged Union on accession?",
+      "expected_answer": "Proof of preferential origin under the SAA, means of proof referred to in Article 314c of Regulation (EEC) No 2454/93, or an ATA carnet.",
+      "answer_type": "enumeration",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Union status",
+        "preferential origin",
+        "ATA carnet"
+      ]
+    },
+    {
+      "id": "ac_028",
+      "category": "agriculture_milk",
+      "question": "What is the purpose of the special restructuring reserve for the dairy sector in Croatia?",
+      "expected_answer": "The reserve (15,000 tonnes) was established to manage the shift from production for on-farm consumption to production for the market.",
+      "answer_type": "purpose",
+      "difficulty": "hard",
+      "key_concepts": [
+        "restructuring reserve",
+        "dairy sector",
+        "milk quota"
+      ]
+    },
+    {
+      "id": "ac_029",
+      "category": "regional_policy",
+      "question": "By what date must the ex post evaluation of Croatia's operational programmes be completed?",
+      "expected_answer": "The ex post evaluation must be completed by 31 December 2016.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "ex post evaluation",
+        "operational programmes",
+        "31 December 2016"
+      ]
+    },
+    {
+      "id": "ac_030",
+      "category": "agriculture_vine",
+      "question": "Which Croatian sub-region is listed under areas planted with vines for specific enrichment rules?",
+      "expected_answer": "Sub-regions include Moslavina, Prigorje-Bilogora, Plešivica, Pokuplje, Zagorje-Međimurje, Hrvatsko Podunavlje, Slavonija, Istra, Primorje, and various parts of Dalmacija.",
+      "answer_type": "enumeration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "vine sub-regions",
+        "wine production",
+        "geographic listing"
+      ]
+    },
+    {
+      "id": "ac_031",
+      "category": "safety_radiation",
+      "question": "How soon after accession must Croatia communicate its radiation protection legislation to the Commission?",
+      "expected_answer": "Croatia must communicate these provisions within three months from accession.",
+      "answer_type": "duration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "ionising radiation",
+        "legislation communication",
+        "3 months"
+      ]
+    },
+    {
+      "id": "ac_032",
+      "category": "kyoto_protocol",
+      "question": "What is the maximum quantity of AAUs that can be transferred to Croatia under the Kyoto Protocol arrangements?",
+      "expected_answer": "The transfer shall not exceed a total quantity of 7,000,000 AAUs.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Assigned Amount Units",
+        "7,000,000 AAUs",
+        "Kyoto Protocol"
+      ]
+    },
+    {
+      "id": "ac_033",
+      "category": "schengen_borders",
+      "question": "What arrangement allows for common border crossing points with Bosnia and Herzegovina?",
+      "expected_answer": "Croatia may maintain common border crossing points where border guards of one party carry out checks on the territory of the other party, until a Council decision on full Schengen application or an amendment to the regulation.",
+      "answer_type": "policy_explanation",
+      "difficulty": "hard",
+      "key_concepts": [
+        "common border crossing",
+        "Bosnia and Herzegovina",
+        "border control"
+      ]
+    },
+    {
+      "id": "ac_034",
+      "category": "aviation_emissions",
+      "question": "When do the ETS provisions for additional aviation activities in Croatia start applying?",
+      "expected_answer": "They apply as of 1 January 2014.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "aviation ETS",
+        "1 January 2014",
+        "emission allowances"
+      ]
+    },
+    {
+      "id": "ac_035",
+      "category": "water_treatment",
+      "question": "By when must Croatia achieve compliance with waste water treatment requirements for agglomerations over 2,000?",
+      "expected_answer": "Compliance must be achieved by 31 December 2023.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "waste water treatment",
+        "2,000 PE",
+        "31 December 2023"
+      ]
+    },
+    {
+      "id": "ac_036",
+      "category": "ipard",
+      "question": "Until when can Croatia continue to contract commitments under the IPARD programme?",
+      "expected_answer": "Until it begins to contract or enter into commitments under the relevant rural development Regulation.",
+      "answer_type": "condition",
+      "difficulty": "medium",
+      "key_concepts": [
+        "IPARD",
+        "rural development",
+        "contracting commitments"
+      ]
+    },
+    {
+      "id": "ac_037",
+      "category": "competition_state_aid",
+      "question": "Which authority assessed aid measures in Croatia prior to accession for compatibility with the Union acquis?",
+      "expected_answer": "The Croatian Competition Agency.",
+      "answer_type": "identification",
+      "difficulty": "easy",
+      "key_concepts": [
+        "Croatian Competition Agency",
+        "state aid",
+        "compatibility assessment"
+      ]
+    },
+    {
+      "id": "ac_038",
+      "category": "agriculture_support",
+      "question": "What is the schedule for introducing direct payments in Croatia relative to existing Member States?",
+      "expected_answer": "The increments are: 25% in 2013, 30% in 2014, 35% in 2015, 40% in 2016, 50% in 2017, 60% in 2018, 70% in 2019, 80% in 2020, 90% in 2021, and 100% as of 2022.",
+      "answer_type": "phasing_schedule",
+      "difficulty": "hard",
+      "key_concepts": [
+        "direct payments",
+        "phasing-in",
+        "2013-2022"
+      ]
+    },
+    {
+      "id": "ac_039",
+      "category": "agriculture_de_mining",
+      "question": "What is the maximum total amount for the special national de-mining reserve in Croatia?",
+      "expected_answer": "The maximum amount is EUR 9,600,000.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "de-mining reserve",
+        "EUR 9,600,000",
+        "agricultural activities"
+      ]
+    },
+    {
+      "id": "ac_040",
+      "category": "treaty_depositary",
+      "question": "Which government serves as the depositary for the Treaty of Accession?",
+      "expected_answer": "The Government of the Italian Republic.",
+      "answer_type": "identification",
+      "difficulty": "easy",
+      "key_concepts": [
+        "Italian Republic",
+        "depositary",
+        "Treaty of Accession"
+      ]
+    },
+    {
+      "id": "ac_041",
+      "category": "maritime_cabotage",
+      "question": "Until what date were cruise services between Croatian ports reserved for Croatian-flagged ships?",
+      "expected_answer": "They were reserved until 31 December 2014.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "maritime cabotage",
+        "cruise services",
+        "31 December 2014"
+      ]
+    },
+    {
+      "id": "ac_042",
+      "category": "agriculture_spirit_drinks",
+      "question": "Which spirit drink from Zadar is protected under Annex III of Regulation (EC) No 110/2008?",
+      "expected_answer": "Zadarski maraschino.",
+      "answer_type": "identification",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Zadarski maraschino",
+        "spirit drinks",
+        "geographic indication"
+      ]
+    },
+    {
+      "id": "ac_043",
+      "category": "agriculture_products",
+      "question": "What aromatic wine-based drink is protected for the region of Samobor?",
+      "expected_answer": "Samoborski bermet.",
+      "answer_type": "identification",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Samoborski bermet",
+        "aromatized wine",
+        "protection"
+      ]
+    },
+    {
+      "id": "ac_044",
+      "category": "environmental_solvents",
+      "question": "By when must DI KLANA d.d. comply with organic solvent emission limit values?",
+      "expected_answer": "As of 1 January 2014.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "organic solvents",
+        "DI KLANA d.d.",
+        "emission limits"
+      ]
+    },
+    {
+      "id": "ac_045",
+      "category": "regional_policy",
+      "question": "What is the maximum level of transfer from the Cohesion and Structural Funds for Croatia as a percentage of its GDP?",
+      "expected_answer": "The maximum level is 3.5240% of its GDP.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "GDP transfer cap",
+        "3.5240%",
+        "Structural Funds"
+      ]
+    },
+    {
+      "id": "ac_046",
+      "category": "eib_governance",
+      "question": "How many alternate directors are nominated by the group containing Bulgaria, Czech Republic, Croatia, and others in the EIB?",
+      "expected_answer": "They nominate four alternates by common accord.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "EIB",
+        "alternate directors",
+        "4 alternates"
+      ]
+    },
+    {
+      "id": "ac_047",
+      "category": "kyoto_protocol",
+      "question": "Must Croatia withdraw its appeal against the Kyoto Compliance Committee as a condition for the AAU transfer?",
+      "expected_answer": "Yes, Croatia must withdraw its appeal before the start of the UNFCCC Conference in Durban (28 November – 9 December 2011).",
+      "answer_type": "condition",
+      "difficulty": "hard",
+      "key_concepts": [
+        "appeal withdrawal",
+        "Kyoto Compliance Committee",
+        "conditionality"
+      ]
+    },
+    {
+      "id": "ac_048",
+      "category": "accession_timeline",
+      "question": "When was the Treaty of Accession signed?",
+      "expected_answer": "The Treaty was signed on 9 December 2011.",
+      "answer_type": "date",
+      "difficulty": "easy",
+      "key_concepts": [
+        "signing",
+        "9 December 2011",
+        "Brussels"
+      ]
+    },
+    {
+      "id": "ac_049",
+      "category": "professional_qualifications",
+      "question": "Until what date must medical training in the former Yugoslavia have commenced to be recognized for Croatia?",
+      "expected_answer": "Training must have commenced before 8 October 1991.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "professional recognition",
+        "8 October 1991",
+        "medical training"
+      ]
+    },
+    {
+      "id": "ac_050",
+      "category": "intellectual_property",
+      "question": "What is the six-month deadline from accession for Croatia regarding plant protection products?",
+      "expected_answer": "Applications for supplementary protection certificates for products first authorized after 1 January 2003 must be lodged within six months from accession.",
+      "answer_type": "deadline",
+      "difficulty": "hard",
+      "key_concepts": [
+        "supplementary protection certificate",
+        "plant protection products",
+        "6-month deadline"
+      ]
+    },
+    {
+      "id": "ac_051",
+      "category": "agriculture_pasture",
+      "question": "What date is the baseline for maintaining land under permanent pasture in Croatia?",
+      "expected_answer": "Croatia must ensure land under permanent pasture on 1 July 2013 is maintained as such.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "permanent pasture",
+        "1 July 2013",
+        "environmental cross-compliance"
+      ]
+    },
+    {
+      "id": "ac_052",
+      "category": "ipard_evaluation",
+      "question": "Is expenditure for the ex post evaluation of the IPARD programme eligible under technical assistance?",
+      "expected_answer": "Yes, such expenditure may be eligible in the rural development framework for 2014-2020.",
+      "answer_type": "eligibility",
+      "difficulty": "medium",
+      "key_concepts": [
+        "IPARD ex post",
+        "technical assistance",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "ac_053",
+      "category": "shipbuilding",
+      "question": "What is the CGT limit for 'Kraljevica' shipbuilding company production?",
+      "expected_answer": "The output is limited to 26,997 CGT.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Kraljevica",
+        "26,997 CGT",
+        "production limit"
+      ]
+    },
+    {
+      "id": "ac_054",
+      "category": "waste_management",
+      "question": "What was the maximum quantity of waste landfilled in non-compliant landfills permitted by 31 December 2017?",
+      "expected_answer": "The maximum quantity was 800,000 tonnes.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "landfill targets",
+        "non-compliant landfills",
+        "800,000 tonnes"
+      ]
+    },
+    {
+      "id": "ac_055",
+      "category": "water_supply",
+      "question": "Which water supply zone is listed as having Area No. 501 and a population of 831,047?",
+      "expected_answer": "DA ZAGREB.",
+      "answer_type": "identification",
+      "difficulty": "medium",
+      "key_concepts": [
+        "DA ZAGREB",
+        "water supply zone",
+        "Zagreb population"
+      ]
+    },
+    {
+      "id": "ac_056",
+      "category": "environment_ippc",
+      "question": "Which institution operates the meat facility in Varaždin listed under IPPC activity 6.4.a?",
+      "expected_answer": "KOKA peradarsko prehrambena industrija dioničko društvo (KOKA d.d.).",
+      "answer_type": "identification",
+      "difficulty": "medium",
+      "key_concepts": [
+        "KOKA d.d.",
+        "IPPC",
+        "meat facility"
+      ]
+    },
+    {
+      "id": "ac_057",
+      "category": "schengen_acquis",
+      "question": "Does Article 26 of the Schengen Convention apply to Croatia from accession?",
+      "expected_answer": "Yes, it is listed in Annex II as binding on and applicable in Croatia as of accession.",
+      "answer_type": "legal_status",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Article 26 Schengen",
+        "Annex II",
+        "immediate application"
+      ]
+    },
+    {
+      "id": "ac_058",
+      "category": "agriculture_milk",
+      "question": "When must Croatia submit the dairy sector restructuring report detailing shift from on-farm consumption?",
+      "expected_answer": "The report must be submitted by 31 December 2013.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "dairy report",
+        "31 December 2013",
+        "restructuring"
+      ]
+    },
+    {
+      "id": "ac_059",
+      "category": "institutional_commitee",
+      "question": "What is the maximum number of members in the Economic and Social Committee after the temporary increase for Croatia?",
+      "expected_answer": "The number is temporarily increased to 353 members.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Economic and Social Committee",
+        "353 members",
+        "temporary increase"
+      ]
+    },
+    {
+      "id": "ac_060",
+      "category": "treaty_safeguards",
+      "question": "How long is the general safeguard period after accession for serious deterioration in an economic sector?",
+      "expected_answer": "The period is up to three years after accession.",
+      "answer_type": "duration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "safeguard measures",
+        "3 years",
+        "economic deterioration"
+      ]
+    },
+    {
+      "id": "ac_061",
+      "category": "pre_accession_aid",
+      "question": "Who manages pre-accession financial assistance (IPA) funds committed before accession for Croatia?",
+      "expected_answer": "They are managed by Croatian implementing agencies as of the date of accession.",
+      "answer_type": "management",
+      "difficulty": "medium",
+      "key_concepts": [
+        "IPA management",
+        "implementing agencies",
+        "pre-accession funds"
+      ]
+    },
+    {
+      "id": "ac_062",
+      "category": "intellectual_property_medicinal",
+      "question": "What is the prior notification requirement for importing medicinal products covered by the SPC specific mechanism?",
+      "expected_answer": "One month's prior notification must be given to the holder or beneficiary of the patent/SPC protection.",
+      "answer_type": "duration",
+      "difficulty": "hard",
+      "key_concepts": [
+        "prior notification",
+        "SPC mechanism",
+        "medicinal products"
+      ]
+    },
+    {
+      "id": "ac_063",
+      "category": "competition_investigation",
+      "question": "Is a Commission decision to object to a pre-accession aid measure regarded as starting a formal investigation?",
+      "expected_answer": "Yes, it is regarded as a decision to initiate the formal investigation procedure within the meaning of the TFEU rules.",
+      "answer_type": "legal_status",
+      "difficulty": "hard",
+      "key_concepts": [
+        "formal investigation",
+        "state aid objection",
+        "compatibility"
+      ]
+    },
+    {
+      "id": "ac_064",
+      "category": "agriculture_sugar",
+      "question": "What is the sugar quota for metropolitan France listed in Annex VI?",
+      "expected_answer": "3,004,811.15 tonnes.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "France sugar quota",
+        "Annex VI",
+        "3,004,811.15 tonnes"
+      ]
+    },
+    {
+      "id": "ac_065",
+      "category": "institution_regions",
+      "question": "How many members does Greece have in the Committee of the Regions according to Article 8 of the Protocol?",
+      "expected_answer": "Greece has 12 members.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Committee of the Regions",
+        "Greece members",
+        "12 members"
+      ]
+    },
+    {
+      "id": "ac_066",
+      "category": "fisheries_catch",
+      "question": "What is the importance level for Slovenian catch in Croatian coastal waters north of the 45 degrees 10 minutes parallel?",
+      "expected_answer": "100 tonnes for a maximum number of 25 fishing vessels.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "fisheries",
+        "100 tonnes",
+        "vessel limit"
+      ]
+    },
+    {
+      "id": "ac_067",
+      "category": "environment_registries",
+      "question": "On what date do SECURED system registries relating to aviation activities apply in Croatia?",
+      "expected_answer": "As of 1 January 2014.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "registries",
+        "aviation activities",
+        "1 January 2014"
+      ]
+    },
+    {
+      "id": "ac_068",
+      "category": "taxation_cigarettes",
+      "question": "What quantitative limit may Member States apply to cigarettes brought in from Croatia from 1 January 2014?",
+      "expected_answer": "A quantitative limit of not less than 300 items.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "cigarette limit",
+        "300 items",
+        "excise duty"
+      ]
+    },
+    {
+      "id": "ac_069",
+      "category": "regional_policy_GDP",
+      "question": "Which year's statistics and projections form the basis for Croatia's GDP calculations by the Commission?",
+      "expected_answer": "Calculations will be based on statistics and projections published in May 2011.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "GDP calculation",
+        "May 2011",
+        "regional policy"
+      ]
+    },
+    {
+      "id": "ac_070",
+      "category": "schengen_evaluation",
+      "question": "Who must the Council consult before deciding on the full application of Schengen provisions in Croatia?",
+      "expected_answer": "The European Parliament.",
+      "answer_type": "consultation",
+      "difficulty": "easy",
+      "key_concepts": [
+        "European Parliament",
+        "Schengen application",
+        "Council consultation"
+      ]
+    },
+    {
+      "id": "ac_071",
+      "category": "eib_capital",
+      "question": "What is the total capital of the EIB following the amendments for Croatia's accession?",
+      "expected_answer": "EUR 233,247,390,000.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "EIB capital",
+        "EUR 233,247,390,000",
+        "subscribed capital"
+      ]
+    },
+    {
+      "id": "ac_072",
+      "category": "agriculture_pasture",
+      "question": "Which two Member States had baseline dates for permanent pasture set on 1 January 2007?",
+      "expected_answer": "Bulgaria and Romania.",
+      "answer_type": "enumeration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "permanent pasture",
+        "Bulgaria",
+        "Romania"
+      ]
+    },
+    {
+      "id": "ac_073",
+      "category": "agriculture_sljivovica",
+      "question": "Name two specific geographical indications for plum brandy (šljivovica) from Croatia.",
+      "expected_answer": "Hrvatska stara šljivovica and Slavonska šljivovica.",
+      "answer_type": "enumeration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "plum brandy",
+        "Hrvatska stara šljivovica",
+        "Slavonska šljivovica"
+      ]
+    },
+    {
+      "id": "ac_074",
+      "category": "environment_ippc_oil",
+      "question": "Which two oil refineries are specifically named under the IPPC activity 1.2 derogations?",
+      "expected_answer": "Rafinerija nafte Rijeka - Urinj and Rafinerija nafte Sisak.",
+      "answer_type": "enumeration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "oil refineries",
+        "Rijeka",
+        "Sisak",
+        "IPPC"
+      ]
+    },
+    {
+      "id": "ac_075",
+      "category": "chemicals_reach",
+      "question": "What is the adaptation period granted to Croatian manufacturers for the pre-registration of phase-in substances?",
+      "expected_answer": "An adaptation period of six months from the date of accession.",
+      "answer_type": "duration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "REACH",
+        "pre-registration",
+        "6 months"
+      ]
+    },
+    {
+      "id": "ac_076",
+      "category": "kyoto_protocol",
+      "question": "To what must the subtractions from Croatia's annual emission allocations be applied if AAUs are transferred?",
+      "expected_answer": "The subtracted amounts must be tonnes of carbon dioxide equivalent.",
+      "answer_type": "unit",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Kyoto Protocol",
+        "carbon dioxide equivalent",
+        "compensation"
+      ]
+    },
+    {
+      "id": "ac_077",
+      "category": "schengen_uk_ireland",
+      "question": "Do Ireland and the UK participate in Schengen decisions relating to Croatia's accession?",
+      "expected_answer": "They take part in decisions insofar as they relate to provisions of the Schengen acquis in which those Member States participate.",
+      "answer_type": "legal_status",
+      "difficulty": "hard",
+      "key_concepts": [
+        "UK",
+        "Ireland",
+        "Schengen participation"
+      ]
+    },
+    {
+      "id": "ac_078",
+      "category": "professional_nurse",
+      "question": "Which midwives' qualification acquired in Croatia before 1 July 2013 does NOT have acquired rights recognition?",
+      "expected_answer": "The qualifications are: viša medicinska sestra ginekološko-opstetričkog smjera, medicinska sestra ginekološko-opstetričkog smjera, viša medicinska sestra primaljskog smjera, medicinska sestra primaljskog smjera, ginekološko-opstetrička primalja and primalja.",
+      "answer_type": "enumeration",
+      "difficulty": "hard",
+      "key_concepts": [
+        "nursing qualifications",
+        "acquired rights",
+        "midwifery"
+      ]
+    },
+    {
+      "id": "ac_079",
+      "category": "environment_greenhouse",
+      "question": "By what mechanism will the Community-wide quantity of emission allowances be increased for Croatia?",
+      "expected_answer": "Only by the quantity of allowances that Croatia shall auction pursuant to Article 10(1).",
+      "answer_type": "mechanism",
+      "difficulty": "hard",
+      "key_concepts": [
+        "emission allowances",
+        "auctioning",
+        "ETS"
+      ]
+    },
+    {
+      "id": "ac_080",
+      "category": "regional_policy_funding",
+      "question": "What is the single pre-financing amount for the structural funds for Croatia as a percentage of the contribution?",
+      "expected_answer": "It represents 30% of the contribution from the Structural Funds.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "pre-financing",
+        "30%",
+        "Structural Funds"
+      ]
+    },
+    {
+      "id": "ac_081",
+      "category": "environment_landfills",
+      "question": "By what share must the municipal waste deposited on landfills be reduced by 31 December 2020?",
+      "expected_answer": "The share shall be reduced to 35% of the 1997 level.",
+      "answer_type": "quantitative",
+      "difficulty": "medium",
+      "key_concepts": [
+        "landfill reduction",
+        "31 December 2020",
+        "35% share"
+      ]
+    },
+    {
+      "id": "ac_082",
+      "category": "environment_solvents",
+      "question": "As of what date do organic solvent emission limits apply to 'HEMPEL d.o.o.' in Umag?",
+      "expected_answer": "As of 1 January 2015.",
+      "answer_type": "date",
+      "difficulty": "medium",
+      "key_concepts": [
+        "HEMPEL d.o.o.",
+        "1 January 2015",
+        "organic solvents"
+      ]
+    },
+    {
+      "id": "ac_083",
+      "category": "agriculture_pasture",
+      "question": "Must Croatia maintain land under permanent pasture as existing on the date of accession?",
+      "expected_answer": "Yes, it must ensure land which was under permanent pasture on 1 July 2013 is maintained as such.",
+      "answer_type": "policy_explanation",
+      "difficulty": "medium",
+      "key_concepts": [
+        "permanent pasture",
+        "1 July 2013",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "ac_084",
+      "category": "regional_policy_GDP",
+      "question": "What criteria are used to calculate the indicative breakdown for transitional support under the Convergence objective?",
+      "expected_answer": "Eligible population, regional prosperity, national prosperity, and unemployment rate.",
+      "answer_type": "enumeration",
+      "difficulty": "hard",
+      "key_concepts": [
+        "indicative breakdown",
+        "prosperity criteria",
+        "regional policy"
+      ]
+    },
+    {
+      "id": "ac_085",
+      "category": "schengen_evaluation",
+      "question": "Which report must the Council take into account before allowing the full application of Schengen rules in Croatia?",
+      "expected_answer": "A Commission report confirming that Croatia continues to fulfil its accession commitments relevant for the Schengen acquis.",
+      "answer_type": "document",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Commission report",
+        "schengen verification",
+        "Council decision"
+      ]
+    },
+    {
+      "id": "ac_086",
+      "category": "accession_signatories",
+      "question": "Who signed the Treaty of Accession on behalf of Germany?",
+      "expected_answer": "Dr. Angela Merkel (Chancellor).",
+      "answer_type": "identification",
+      "difficulty": "easy",
+      "key_concepts": [
+        "Angela Merkel",
+        "Germany",
+        "signatory"
+      ]
+    },
+    {
+      "id": "ac_087",
+      "category": "judiciary_minorities",
+      "question": "Which act does Croatia commit to effectively implementing regarding minority rights in Annex VII?",
+      "expected_answer": "The Constitutional Act on the Rights of National Minorities (CARNM).",
+      "answer_type": "identification",
+      "difficulty": "medium",
+      "key_concepts": [
+        "CARNM",
+        "minority rights",
+        "Annex VII"
+      ]
+    },
+    {
+      "id": "ac_088",
+      "category": "fisheries_premium",
+      "question": "During which years may the EFF contribute to individual premiums for fishers under the access regime?",
+      "expected_answer": "During the period 2014 to 2015.",
+      "answer_type": "duration",
+      "difficulty": "hard",
+      "key_concepts": [
+        "EFF",
+        "individual premiums",
+        "2014-2015"
+      ]
+    },
+    {
+      "id": "ac_089",
+      "category": "regional_policy_commitments",
+      "question": "What is the deadline for sending an application for payment for Croatia's 2013 Structural Fund commitments?",
+      "expected_answer": "The deadline is 31 March 2018.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Structural Funds",
+        "payment application",
+        "31 March 2018"
+      ]
+    },
+    {
+      "id": "ac_090",
+      "category": "agriculture_rural_development",
+      "question": "By what date must semi-subsistence farm applications be approved to receive special support in Croatia?",
+      "expected_answer": "They must be approved by 31 December 2017.",
+      "answer_type": "date",
+      "difficulty": "medium",
+      "key_concepts": [
+        "semi-subsistence farms",
+        "31 December 2017",
+        "rural development"
+      ]
+    },
+    {
+      "id": "ac_091",
+      "category": "taxation_building_land",
+      "question": "Until what date could Croatia continue to exempt the supply of building land from taxation?",
+      "expected_answer": "Until 31 December 2014.",
+      "answer_type": "date",
+      "difficulty": "medium",
+      "key_concepts": [
+        "building land",
+        "tax exemption",
+        "31 December 2014"
+      ]
+    },
+    {
+      "id": "ac_092",
+      "category": "schengen_secretariat",
+      "question": "Into which body was the Schengen Secretariat integrated?",
+      "expected_answer": "The General Secretariat of the Council.",
+      "answer_type": "identification",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Schengen Secretariat",
+        "General Secretariat of the Council",
+        "integration"
+      ]
+    },
+    {
+      "id": "ac_093",
+      "category": "environment_emissions",
+      "question": "What is the benchmark value percentage for Croatia's greenhouse gas emission reduction in Annex II?",
+      "expected_answer": "26%.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "greenhouse gas",
+        "Annex IIa",
+        "26%"
+      ]
+    },
+    {
+      "id": "ac_094",
+      "category": "agriculture_dairy",
+      "question": "How many tonnes are reserved for Bulgaria in the restructuring reserve table in point 2 of Annex IX?",
+      "expected_answer": "39,180 tonnes.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "Bulgaria",
+        "39,180 tonnes",
+        "restructuring reserve"
+      ]
+    },
+    {
+      "id": "ac_095",
+      "category": "intellectual_property_trade_mark",
+      "question": "Does a Community trade mark registered before Croatia's accession automatically extend to Croatia?",
+      "expected_answer": "Yes, as of the date of accession, it shall be extended to have equal effect throughout the territory of the new Member States.",
+      "answer_type": "legal_status",
+      "difficulty": "medium",
+      "key_concepts": [
+        "Community trade mark",
+        "automatic extension",
+        "accession"
+      ]
+    },
+    {
+      "id": "ac_096",
+      "category": "shipbuilding_CGT",
+      "question": "What is the CGT production limit for '3. MAJ'?",
+      "expected_answer": "The limit is 109,570 CGT.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "3. MAJ",
+        "109,570 CGT",
+        "production limit"
+      ]
+    },
+    {
+      "id": "ac_097",
+      "category": "regional_policy_NSFR",
+      "question": "How soon must Croatia transmit its national strategic reference framework (NSFR) to the Commission?",
+      "expected_answer": "Within three months from the date of accession.",
+      "answer_type": "duration",
+      "difficulty": "medium",
+      "key_concepts": [
+        "NSFR",
+        "3 months",
+        "regional policy"
+      ]
+    },
+    {
+      "id": "ac_098",
+      "category": "customs_ATA",
+      "question": "Can an ATA carnet issued in Croatia before accession be used for duty-free release after accession?",
+      "expected_answer": "Yes, on condition it was issued before the date of accession.",
+      "answer_type": "condition",
+      "difficulty": "medium",
+      "key_concepts": [
+        "ATA carnet",
+        "duty-free",
+        "customs"
+      ]
+    },
+    {
+      "id": "ac_099",
+      "category": "fisheries_mediterranean",
+      "question": "What is the minimum distance for bottom trawls for small vessels (under 15m) operating at depths over 50m in Western Istria?",
+      "expected_answer": "A minimum distance of 1 nautical mile from the coast.",
+      "answer_type": "quantitative",
+      "difficulty": "hard",
+      "key_concepts": [
+        "bottom trawls",
+        "1 nautical mile",
+        "fisheries"
+      ]
+    },
+    {
+      "id": "ac_100",
+      "category": "accession_instruments",
+      "question": "By when must the instruments of ratification be deposited with the Italian government?",
+      "expected_answer": "By 30 June 2013.",
+      "answer_type": "date",
+      "difficulty": "easy",
+      "key_concepts": [
+        "ratification",
+        "30 June 2013",
+        "Italian government"
+      ]
+    },
+    {
+      "id": "ac_101",
+      "category": "agriculture_direct_payments",
+      "question": "Can Croatia complement direct payments up to 100% in the first years of membership?",
+      "expected_answer": "Yes, Croatia has the possibility to complement direct payments up to 100% of the level applicable in older Member States.",
+      "answer_type": "mogucnost",
+      "difficulty": "medium",
+      "key_concepts": [
+        "complementary payments",
+        "100% level",
+        "farmers"
+      ]
+    },
+    {
+      "id": "ac_102",
+      "category": "environment_water_human",
+      "question": "Until what date are certain water supply zones in Croatia exempt from the microbiological parameters of Directive 98/83/EC?",
+      "expected_answer": "Until 1 January 2019.",
+      "answer_type": "date",
+      "difficulty": "hard",
+      "key_concepts": [
+        "water quality",
+        "human consumption",
+        "1 January 2019"
+      ]
+    }
+  ]
+}

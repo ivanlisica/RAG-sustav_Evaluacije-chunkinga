@@ -1,0 +1,46 @@
+======================================================================
+ DUBINSKI IZVJEŠTAJ O STATISTIČKOJ ZNAČAJNOSTI I PRISTRANOSTI 
+======================================================================
+
+--- 1. ANALIZA STRATEGIJA CHUNKINGA ---
+Deskriptivna statistika (Consensus Score):
+ - 512 Size, 50 Overlap: Prosjek = 0.810 (SD = 0.264)
+ - Semantic Chunking: Prosjek = 0.790 (SD = 0.280)
+ - 1024 Size, 100 Overlap: Prosjek = 0.789 (SD = 0.281)
+ - 128 Size, 20 Overlap: Prosjek = 0.711 (SD = 0.310)
+
+Jednosmjerna ANOVA (Postoji li razlika među strategijama?):
+ -> F-statistika: 10.8323, P-vrijednost: 4.7031e-07
+ -> ZAKLJUČAK: Postoji statistički značajna razlika u performansama strategija.
+
+T-test: Usporedba najbolje strategije ('512 Size, 50 Overlap') s ostalima:
+ - vs Semantic Chunking: p = 0.2461 (ns)
+ - vs 1024 Size, 100 Overlap: p = 0.2254 (ns)
+ - vs 128 Size, 20 Overlap: p = 0.0000 (***)
+
+--- 2. USPOREDBA DATASETOVA (Težina dokumenata) ---
+Prosjek za Dataset_1: 0.668 (SD = 0.286)
+Prosjek za Dataset_2: 0.908 (SD = 0.225)
+T-test: t = -20.152, p = 0.0000
+ -> ZAKLJUČAK: Postoji značajna razlika. Modeli su se bolje snašli na datasetu 'Dataset_2'.
+
+--- 3. ANALIZA PRISTRANOSTI SUDACA (LLM BIAS) ---
+Ova sekcija analizira favorizira li sudac odgovore koje je generirao njegov vlastiti model (npr. ocjenjuje li GPT sudac više GPT generatora nego Gemini generatora).
+
+A) Kako OPENAI SUDAC ocjenjuje generatore?
+ - Ocjenjuje svoj model (OpenAI-GPT4o-Mini): Prosjek = 0.779
+ - Ocjenjuje tuđi model (Google-Gemini-Flash): Prosjek = 0.744
+ - T-test: p = 0.0286
+ -> ZAKLJUČAK: Pronađena je STATISTIČKI ZNAČAJNA PRISTRANOST. OpenAI sudac značajno favorizira vlastite odgovore.
+
+B) Kako GEMINI SUDAC ocjenjuje generatore?
+ - Ocjenjuje svoj model (Google-Gemini-Flash): Prosjek = 0.835
+ - Ocjenjuje tuđi model (OpenAI-GPT4o-Mini): Prosjek = 0.742
+ - T-test: p = 0.0000
+ -> ZAKLJUČAK: Pronađena je STATISTIČKI ZNAČAJNA PRISTRANOST. Gemini sudac značajno favorizira vlastite odgovore.
+
+C) Usporedba strogoće sudaca (Tko daje više ocjene za ISTE odgovore?)
+ - Prosjek SVIH ocjena koje je dao OpenAI sudac: 0.761
+ - Prosjek SVIH ocjena koje je dao Gemini sudac: 0.788
+ - Paired T-test: p = 0.0000
+ -> ZAKLJUČAK: Razlika je značajna. OpenAI sudac je statistički značajno STROŽI (daje niže ocjene) od konkurenta.
